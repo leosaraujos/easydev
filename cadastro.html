@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>easYDev - Desenvolvimento sem Burocracia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+  <body>
+    <main class="form-inicial w-100 m-auto">
+      <form action="">
+        <div class="text-center">
+          <img src="image/logo.jpeg" alt="easYDev" class="logo-login">
+          <h1 class="h5 mb-0">DEV AINDA SEM CADASTRO?</h1>
+          <p class="small">Preencha o formulário abaixo para começar a usar o easYDev, é rápido e fácil.</p>
+        </div>  
+
+        <hr>
+
+        <button class="w-100 mb-1 btn btn-md bt-style" type="button"><i class="fa-brands fa-google"></i> Continue com Google</button>
+        <p class="small mb-1 text-center">ou</p>
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userName" placeholder="Nome">
+                    <label for="userName">Nome</label>            
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userLastname" placeholder="Sobrenome">
+                    <label for="userLastname">Sobrenome</label>            
+                </div>
+            </div>
+        </div>        
+        <div class="form-floating">
+            <input type="email" class="form-control" id="userEmail" placeholder="E-mail">
+            <label for="userEmail">Email</label>            
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="userPass" placeholder="Senha">
+            <label for="userPass">Senha</label>          
+            <i class="fa-regular showPass"></i>
+            <p class="small sm-t mt-2 mb-1">*A senha deve conter no mínimo 8 caracteres.</p>
+            <p class="small sm-t">*Para tornala mais segura, utilize letras maiúsculas, minúsculas, números e caracteres especiais <strong>$, %, @...</strong>  </p>
+        </div>        
+    
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="termos"> Declaro que li e aceito os <a href="javascript:void(0)" class="btn-link showTermos">temos de serviço e politica de privacidade</a> da easYDev.
+          </label>
+        </div>
+        <button class="w-100 mb-3 btn btn-md bt-style" type="submit">Criar conta</button>        
+
+        <p class="small text-center">Dev você já tem cadastro na easYDev?</p>
+        <a href="index.html" class="w-100 btn btn-md bt-outline" >Voltar para login</a>        
+
+        <p class="mt-5 mb-3 text-muted text-center">&copy; easYDev 2022</p>
+      </form>
+    </main>
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="termos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="termos_politica" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-body">
+                <h4 class="fw-bold">Temos de Serviço e Politicas de Privacidade</h4>
+                <hr>
+                <h5 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tempore, voluptates ullam ex maxime laborum labore aspernatur. Quaerat voluptatibus, praesentium debitis voluptates quam a iusto sequi rem saepe odit dolore.</p>
+            </div>
+        <div class="modal-footer">
+          <button type="button" class="btn bt-style bt-outline" data-bs-dismiss="modal">Não aceito</button>
+          <button type="button" class="btn bt-style">Aceito</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/22716c812b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

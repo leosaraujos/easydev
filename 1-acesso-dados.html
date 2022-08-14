@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>easYDev - Desenvolvimento sem Burocracia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="image/logo-easy.png" alt="" width="auto" height="24" class="d-inline-block align-text-top">easYDev
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEasy" aria-controls="navbarEasy" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarEasy">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Link 2</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link 3
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item disabled" href="#">Link</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Link</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                </ul>
+              </li>              
+            </ul>           
+          </div>
+        </div>
+    </nav>
+
+    <div class="text-center mt-4">
+        <h1 class="h5 mb-0 fw-bold">Olá Dev $.userName<br>Seja bem vind@!</h1>
+        <p class="small">Preencha o formulário abaixo para<br>começar a usar o easYDev, é rápido e fácil.</p>
+    </div>
+
+    <main class="form-cad-full w-100 m-auto">
+        <div class="steps">
+            <ul>
+                <li>
+                    <a href="" class="step btn active">1</a>
+                    <span>Dados Pessoais</span>
+                </li>
+                <li>
+                    <a href="" class="step btn">2</a>
+                    <span>Habilidades</span>
+                </li>
+                <li>
+                    <a href="" class="step btn">3</a>
+                    <span>Conhecimento</span>
+                </li>
+                <li>
+                    <a href="" class="step btn">4</a>
+                    <span>Documentação</span>
+                </li>
+            </ul>
+        </div>
+      <form action="">  
+        <h4 class="h6 fw-bold mt-3 mb-2">Dados Pessoais</h4>
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userName" placeholder="Nome" disabled>
+                    <label for="userName">Nome</label>            
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userLastname" placeholder="Sobrenome" disabled>
+                    <label for="userLastname">Sobrenome</label>            
+                </div>
+            </div>
+        </div>
+                
+        <div class="form-floating">
+            <input type="email" class="form-control" id="userEmail" placeholder="E-mail" disabled>
+            <label for="userEmail">Email</label>            
+        </div>
+
+        <div class="form-floating">
+            <input type="tel" class="form-control" id="userTel" placeholder="+55 00 99999-9999">
+            <label for="userTel">Telefone</label>            
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userCpf" placeholder="CPF">
+                    <label for="userCpf">CPF</label>            
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userRg" placeholder="RG">
+                    <label for="userRg">RG</label>            
+                </div>
+            </div>
+        </div>
+                
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="usecpfOrg" placeholder="Orgão emissor">
+                    <label for="usecpfOrg">Org. Emissor</label>            
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="usercpfData" placeholder="Data de emissão">
+                    <label for="usercpfData">Data de emissão</label>            
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="useDatanasc" placeholder="Data de nascimento">
+                    <label for="useDatanasc">Data de nascimento</label>            
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="userNatural" placeholder="Data de emissão">
+                    <label for="userNatural">Naturalizado</label>            
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="userPai" placeholder="Nome do Pai">
+            <label for="userPai">Nome do Pai</label>            
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="userMãe" placeholder="Nome da Mãe">
+            <label for="userMãe">Nome da Mãe</label>            
+        </div>
+
+        <h4 class="h6 fw-bold mb-2">Sexo</h4>
+        <div class="d-flex">
+            <div class="w-50">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="masculino">
+                    <label class="form-check-label" for="masculino">
+                        Masculino
+                    </label>
+                </div>            
+            </div>
+            <div class="w-50">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="sexo" id="feminino" checked>
+                    <label class="form-check-label" for="feminino">
+                    Feminino
+                    </label>
+                </div>
+            </div>
+        </div>
+        <h4 class="h6 fw-bold mt-3 mb-2">Estado Cívil</h4>
+        <div class="d-flex">
+            <div class="w-50">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estCivil" id="solteiro" checked>
+                    <label class="form-check-label" for="solteiro">
+                        Solteiro
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estCivil" id="casado">
+                    <label class="form-check-label" for="casado">
+                        Casado
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estCivil" id="divorciado">
+                    <label class="form-check-label" for="divorciado">
+                        Divorciado
+                    </label>
+                </div>
+            </div>
+            
+            <div class="w-50">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estCivil" id="uni_esta">
+                    <label class="form-check-label" for="uni_esta">
+                        União estável
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="estCivil" id="viuvo">
+                    <label class="form-check-label" for="viuvo">
+                        Viúvo
+                    </label>
+                </div>            
+            </div>
+        </div>    
+        <h4 class="h6 fw-bold mt-3 mb-2">Escolaridade</h4>
+        <div class="d-flex">
+            <div class="w-50">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escol" id="ens_med_comp" checked>
+                    <label class="form-check-label" for="ens_med_comp">
+                        Médio comp.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escol" id="ens_sup_comp">
+                    <label class="form-check-label" for="ens_sup_comp">
+                        Superior comp.
+                    </label>
+                </div>
+            </div>            
+            <div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escol" id="ens_sup_incomp">
+                    <label class="form-check-label" for="ens_sup_incomp">
+                        Superior incomp.
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="escol" id="pos">
+                    <label class="form-check-label" for="pos">
+                        Pós graduação
+                    </label>
+                </div>            
+            </div>
+        </div>
+        <h4 class="h6 fw-bold mt-3 mb-2">Endereço</h4>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="endRua" placeholder="Rua">
+            <label for="endRua">Rua</label>            
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="endNum" placeholder="Nº">
+                    <label for="endNum">Nº</label>            
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="endBairro" placeholder="Bairro">
+                    <label for="endBairro">Bairro</label>            
+                </div>
+            </div>
+        </div>
+
+        <div class="form-floating">
+            <input type="text" class="form-control" id="endCid" placeholder="Cidade">
+            <label for="endCid">Cidade</label>            
+        </div>        
+
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="endUf" placeholder="UF">
+                    <label for="endUf">UF</label>            
+                </div>
+            </div>
+            <div class="col-sm-8 col-md-9">
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="endCep" placeholder="CEP">
+                    <label for="endCep">CEP</label>            
+                </div>
+            </div>
+        </div>
+
+        <a href="1-acesso-habilidades.html" class="w-100 btn btn-md bt-style" >Prosseguir</a>        
+
+        <p class="mt-5 mb-3 text-muted text-center">&copy; easYDev 2022</p>
+      </form>
+    </main>
+    
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/22716c812b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

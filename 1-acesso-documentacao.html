@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>easYDev - Desenvolvimento sem Burocracia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />    
+    <link rel="stylesheet" href="css/style.css" />    
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="image/logo-easy.png" alt="" width="auto" height="24" class="d-inline-block align-text-top">easYDev
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarEasy" aria-controls="navbarEasy" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarEasy">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled">Link 1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Link 2</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Link 3
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item disabled" href="#">Link</a></li>
+                  <li><a class="dropdown-item disabled" href="#">Link</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Sair</a></li>
+                </ul>
+              </li>              
+            </ul>           
+          </div>
+        </div>
+    </nav>
+
+    <div class="text-center mt-4">
+        <h1 class="h5 mb-0 fw-bold">Olá Dev $.userName<br>Seja bem vind@!</h1>
+        <p class="small">Preencha o formulário abaixo para<br>começar a usar o easYDev, é rápido e fácil.</p>
+    </div>
+
+    <main class="form-cad-full w-100 m-auto">
+        <div class="steps">
+            <ul>
+                <li>
+                    <a href="" class="step btn done">1</a>
+                    <span>Dados Pessoais</span>
+                </li>
+                <li>
+                    <a href="" class="step btn done">2</a>
+                    <span>Habilidades</span>
+                </li>
+                <li>
+                    <a href="" class="step btn done">3</a>
+                    <span>Conhecimento</span>
+                </li>
+                <li>
+                    <a href="" class="step btn active">4</a>
+                    <span>Documentação</span>
+                </li>
+            </ul>
+        </div>
+      <form action="">  
+        <h4 class="h6 fw-bold mt-3 mb-2">Documentação</h4>
+        <p class="small">Seu acesso a plataforma será liberado após a verificação e validação dos documentos enviados.</p>
+
+        <div class="upload-files">
+            <label for="formFile" class="form-label">Adicione aqui os documentos</label>
+            <input class="form-control inputF" type="file" id="formFile">
+        </div>
+
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Documento</th>
+                <th scope="col" class="text-center">Status</th>
+                <th scope="col" class="text-center">Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>CPF</td>
+                <td class="text-center"><div class="status aprovado">Aprovado</div></td>
+                <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>RG Frente</td>
+                <td class="text-center"><div class="status analise">Analise</div></td>
+                <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>RG Verso</td>
+                <td class="text-center"><div class="status recusado">Recusado</div></td>
+                <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Certificado</td>
+                <td class="text-center"><div class="status aprovado">Aprovado</div></td>
+                <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        
+        
+        <a href="1-acesso-documentacao.html" class="w-100 btn btn-md mt-3 bt-style" >Finalizar Cadastro</a>        
+
+        <p class="mt-5 mb-3 text-muted text-center">&copy; easYDev 2022</p>
+      </form>
+    </main>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/22716c812b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+//Font
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap);  
+$lig: 200;
+$reg: 400;
+$bol: 600;
+
+//Color
+$black:    #212121;
+$grey-1:   #323a45;
+$grey-2:   #5b616b;
+$grey-3:   #d6d7d9;
+$white:    #ffffff;
+$green:    #4aa564;
+$blue-1:   #02bfe7;
+$blue-2:   #557cd2;
+$blue-3:   #e0eaff;
+$yell:     #f9c642;
+$red-1:    #981b1e;
+$red-2:    #e31c3d;
+$purple:   #9a4ab7;
+
+$bg-sucess:#e7f4e4;
+$bg-erro:  #f9dede; 
+
+
+//Mixin
+
+//Border Radius
+@mixin border-radius($radius){
+    border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+    
+//Body 
+body {
+    font-family: 'Inter', sans-serif;
+}            
+
+//Buttons    
+.btn {
+    @include border-radius (4px);
+    &.bt-style {
+        background-color: $blue-2;
+        border-color: $blue-2;        
+        color: $white;
+        &:hover {
+            background-color: $purple;
+            border-color: $purple;        
+        }
+    }
+    &.bt-outline {
+        background-color: transparent;
+        color: $grey-2;
+        border-color: $grey-2;
+        &:hover {
+            color: $white;
+            background-color: $grey-2;
+            border-color: $grey-2;        
+        }
+    }
+}    
+
+//Modal
+.modal-content {
+    .btn-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+    }
+}
+
+//Navbar
+.navbar-brand {
+    img {
+        margin-right: 8px;
+    }
+}
+
+//Step
+.steps {
+    ul {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0 0 32px 0;
+        padding: 0;        ;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 21px;
+            width: 100%;
+            height: 1px;
+            background-color: $grey-3;            
+            z-index: 1;
+        }
+        li {
+            z-index: 2;
+            text-align: center;
+            span {
+                display: block;
+                font-size: 0.6rem;
+                color: $black;
+            }
+            .step {                
+                width: 42px;
+                height: 42px;
+                line-height: 28px;
+                text-align: center;
+                color: $white;
+                background-color: $blue-2;
+                @include border-radius(100px);
+                &:hover {
+                    background: $purple;
+                    transition: 0.3s;
+                }
+                &.done,
+                &.active{
+                    background: $purple;
+                    pointer-events: none;                    
+                }
+                &.done{
+                    color: $grey-2;
+                    background: $grey-3;
+                    border-color: $grey-3;
+                }                
+            }
+        }
+    }
+}
+
+//Dados Pessoais
+.form-cad-full {
+    color: $black;
+    max-width: 380px;
+    padding: 15px;    
+    hr {
+        border-color: $grey-2;
+        }
+    h1 {
+        font-weight: $bol;
+    }    
+}
+
+//Upload-files
+.upload-files {
+    width: 100%;
+    //height: 80px;
+    padding: 15px;
+    margin-bottom: 8px;
+    text-align: center;
+    @include border-radius(4px);
+    border: 1px dashed $blue-2;
+    background: $blue-3;
+    .inputF {
+        //opacity: 0;
+    }
+}
+.removeDoc {
+    color: $blue-2;
+}
+.status {
+    &.aprovado {color:$green}
+    &.analise {color:$yell}
+    &.recusado {color:$red-2}
+}
+
+//Login / Cadastro
+.icon-svg,
+.logo-login {
+    width: 140px;
+    height: auto;    
+}
+.icon-svg {
+    display: block;
+    margin: 0 auto;
+    fill: $purple;
+}
+.checkbox {
+    font-size: 0.8rem;
+    .showTermos {
+        color: $blue-2;
+    }
+}
+
+.form-floating{
+    margin-bottom: 16px;
+}    
+.form-inicial {
+    color: $black;
+    max-width: 380px;
+    padding: 15px;    
+    hr {
+        border-color: $grey-2;
+        }
+    h1 {
+        font-weight: $bol;
+    }    
+    .small {
+        color: $grey-2;
+        &.sm-t {
+            font-size: 0.7rem;    
+            color: $purple;
+        }
+    }
+    .btn-link {
+        color: $blue-2;
+    }
+    .showPass {
+        position: absolute;
+        right: 18px;
+        top: 20px;
+        z-index: 2;
+        cursor: pointer;
+        &:before {
+            content: "\f070";
+        }
+        &.show {
+            color: $purple;
+            &:before {
+                content: "\f06e";
+            }            
+        }    
+    }    
+}
