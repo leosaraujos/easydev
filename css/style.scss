@@ -161,9 +161,19 @@ body {
     color: $blue-2;
 }
 .status {
-    &.aprovado {color:$green}
-    &.analise {color:$yell}
-    &.recusado {color:$red-2}
+    font-size: 0.6rem;
+    padding: 4px;
+    @include border-radius(100px);
+    color: $white;
+    &.aprovado {background:$green}
+    &.analise {background:$yell}
+    &.recusado {background:$red-2}
+    &.aguardando {background:$grey-2}
+}
+table {
+    input {
+        
+    }
 }
 
 //Login / Cadastro

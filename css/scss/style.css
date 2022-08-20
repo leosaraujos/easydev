@@ -117,14 +117,25 @@ body {
   color: #557cd2;
 }
 
+.status {
+  font-size: 0.6rem;
+  padding: 4px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  color: #ffffff;
+}
 .status.aprovado {
-  color: #4aa564;
+  background: #4aa564;
 }
 .status.analise {
-  color: #f9c642;
+  background: #f9c642;
 }
 .status.recusado {
-  color: #e31c3d;
+  background: #e31c3d;
+}
+.status.aguardando {
+  background: #5b616b;
 }
 
 .icon-svg,

@@ -78,13 +78,10 @@
       <form action="">  
         <h4 class="h6 fw-bold mt-3 mb-2">Documentação</h4>
         <p class="small">Seu acesso a plataforma será liberado após a verificação e validação dos documentos enviados.</p>
+        
+        <p class="small">*<strong>OBS:</strong> CADA arquivo deve conter no máximo 500kb e as extensões permitidas são JPG, JPGE, PNG e PDF.</p>
 
-        <div class="upload-files">
-            <label for="formFile" class="form-label">Adicione aqui os documentos</label>
-            <input class="form-control inputF" type="file" id="formFile">
-        </div>
-
-        <table class="table table-striped">
+        <table class="table table-striped align-middle">
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -96,27 +93,69 @@
             <tbody>
               <tr>
                 <th scope="row">1</th>
-                <td>CPF</td>
-                <td class="text-center"><div class="status aprovado">Aprovado</div></td>
+                <td>CPF Frente</td>
+                <td class="text-center"><div class="status aguardando">Aguardando</div></td>
                 <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
               </tr>
               <tr>
+                <td colspan="4">
+                  <input class="form-control form-control-sm" type="file" id="cpf-frente-File">                  
+                </td>
+              </tr>
+              <tr>
                 <th scope="row">2</th>
+                <td>CPF Verso</td>
+                <td class="text-center"><div class="status analise">Analíse</div></td>
+                <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <input class="form-control form-control-sm" type="file" id="cpf-verso-File">                  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
                 <td>RG Frente</td>
                 <td class="text-center"><div class="status analise">Analise</div></td>
                 <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <td colspan="4">
+                  <input class="form-control form-control-sm" type="file" id="rg-frente-File">                  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
                 <td>RG Verso</td>
                 <td class="text-center"><div class="status recusado">Recusado</div></td>
                 <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
               </tr>
               <tr>
-                <th scope="row">4</th>
+                <td colspan="4">
+                  <input class="form-control form-control-sm" type="file" id="rg-verso-File">                  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>RG Verso</td>
+                <td class="text-center"><div class="status recusado">Recusado</div></td>
+                <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <input class="form-control form-control-sm" type="file" id="rg-verso-File">                  
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
                 <td>Certificado</td>
                 <td class="text-center"><div class="status aprovado">Aprovado</div></td>
                 <td class="text-center"><a href="javascript:void(0)" title="Remover" class="removeDoc"><i class="fa-solid fa-trash"></i></a></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <input class="form-control form-control-sm" type="file" id="rg-frente-File">                  
+                </td>
               </tr>
             </tbody>
           </table>
