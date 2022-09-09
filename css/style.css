@@ -112,6 +112,7 @@ body {
   border: 1px dashed #557cd2;
   background: #e0eaff;
 }
+
 .removeDoc {
   color: #557cd2;
 }
@@ -196,4 +197,399 @@ body {
 }
 .form-inicial .showPass.show:before {
   content: "\f06e";
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  color: #9a4ab7;
+}
+.breadcrumb a {
+  color: #557cd2;
+}
+
+.title-section h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.navAside {
+  padding: 0 0 1.5rem 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.navAside li a {
+  color: #ffffff;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+.navAside li a:hover, .navAside li a.active {
+  color: #ffffff;
+  background: #00569e;
+  border-color: #00569e;
+}
+
+.navHeader_intern {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid #d6d7d9;
+}
+.navHeader_intern li a {
+  color: #557cd2;
+}
+.navHeader_intern li a:hover {
+  color: #9a4ab7;
+  border-color: transparent;
+}
+.navHeader_intern li i {
+  font-size: 24px;
+}
+.navHeader_intern li.user a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  text-align: right;
+}
+.navHeader_intern li.user a .nameUser {
+  color: #212121;
+}
+.navHeader_intern li.user a .nameUser:before {
+  content: "Bem vindo";
+  line-height: 0.2rem;
+  font-weight: 200;
+  font-size: 0.7rem;
+  display: block;
+}
+
+.content-center {
+  width: 100%;
+}
+
+.buscaEasy {
+  width: 0rem;
+  background: #ffffff;
+  border-right: 1px solid #557cd2;
+  transition: 0.3s all;
+  opacity: 0;
+}
+.buscaEasy.show {
+  width: 28rem;
+  transition: 0.3s all;
+  opacity: 1;
+}
+.buscaEasy .btn {
+  margin-bottom: 0.5rem;
+}
+.buscaEasy label {
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+.buscaEasy .title {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 0.9rem;
+}
+.buscaEasy .title h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+.buscaEasy p {
+  padding: 0.5rem;
+}
+.buscaEasy p.small {
+  font-size: 0.7rem;
+}
+.buscaEasy .content {
+  padding: 0.5rem;
+}
+
+.content-jobs {
+  display: flex;
+  flex-direction: row;
+  background: #f5f9fa;
+}
+.content-jobs .logo-Aside {
+  padding: 0.8rem 0 1.5rem;
+  text-align: center;
+  font-size: 0.7rem;
+  color: #ffffff;
+}
+.content-jobs .asideNav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 80px;
+  padding: 0.5rem;
+  background-color: #557cd2;
+}
+.content-jobs .content-center {
+  padding: 0.5rem 0.8rem;
+}
+
+.feedJobs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.cardJob {
+  width: 17rem;
+}
+.cardJob a {
+  text-decoration: none;
+  color: #212121;
+}
+.cardJob a:hover {
+  color: #557cd2;
+}
+.cardJob a:hover .titleJob {
+  color: #9a4ab7;
+}
+.cardJob a .thumbJob {
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+.cardJob a .thumbJob .cat {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.6rem;
+  background: #ffffff;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.cardJob a .thumbJob .val {
+  position: absolute;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ffffff;
+  display: table;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+.cardJob a .titleJob {
+  font-weight: 600;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+.cardJob a .descJob {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  height: 4rem;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.jobOpen .titleJob,
+.taskOpen .titleJob {
+  font-weight: 600;
+}
+.jobOpen .thumbJob,
+.taskOpen .thumbJob {
+  height: 190px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.jobOpen .thumbJob .cat,
+.taskOpen .thumbJob .cat {
+  position: absolute;
+  top: 0.8rem;
+  left: 0.8rem;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.6rem;
+  background: #ffffff;
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+}
+.jobOpen .thumbJob .val span,
+.taskOpen .thumbJob .val span {
+  position: absolute;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background: #ffffff;
+  display: table;
+  bottom: 0.8rem;
+  right: 0.8rem;
+}
+.jobOpen .thumbJob .val:before,
+.taskOpen .thumbJob .val:before {
+  position: absolute;
+  color: #ffffff;
+  bottom: 2.9rem;
+  right: 0.8rem;
+  font-size: 0.73rem;
+  content: "Valor total do projeto";
+}
+.jobOpen .thumbJob .val.proj:before,
+.taskOpen .thumbJob .val.proj:before {
+  position: absolute;
+  color: #ffffff;
+  bottom: 2.9rem;
+  right: 0.8rem;
+  font-size: 0.73rem;
+  content: "Valor da tarefa";
+}
+.jobOpen .thumbJob .bt_goJob,
+.taskOpen .thumbJob .bt_goJob {
+  position: absolute;
+  bottom: 0.8rem;
+  right: 0.8rem;
+  background: #557cd2;
+  color: #ffffff;
+  display: none;
+}
+.jobOpen .descJob,
+.taskOpen .descJob {
+  padding: 0.5rem;
+}
+.jobOpen .descJob p,
+.taskOpen .descJob p {
+  font-size: 0.8rem;
+}
+.jobOpen .descJob .deadLine,
+.taskOpen .descJob .deadLine {
+  font-size: 0.8rem;
+  font-weight: 400;
+  border-top: 1px solid #d6d7d9;
+  padding-top: 0.5rem;
+}
+.jobOpen .descJob .deadLine .date,
+.taskOpen .descJob .deadLine .date {
+  font-weight: 600;
+}
+.jobOpen .descJob .deadLine .date:before,
+.taskOpen .descJob .deadLine .date:before {
+  content: "Prazo de Entrega:";
+  margin-right: 0.3rem;
+}
+.jobOpen .tasks,
+.taskOpen .tasks {
+  background-color: rgba(214, 215, 217, 0.4);
+  padding: 0.8rem 0.8rem 0.4rem 0.8rem;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+.jobOpen .tasks h4,
+.taskOpen .tasks h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid #5b616b;
+}
+
+.taskOpen .footerTask {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #d6d7d9;
+  padding-top: 0.5rem;
+}
+.taskOpen .footerTask .bt_goJob {
+  background: #557cd2;
+  color: #ffffff;
+}
+.taskOpen .footerTask .deadLine {
+  font-size: 0.8rem;
+  font-weight: 400;
+  border: 0;
+  padding: 0;
+}
+.taskOpen .footerTask .deadLine .date {
+  font-weight: 600;
+}
+.taskOpen .footerTask .deadLine .date:before {
+  content: "Prazo de Entrega:";
+  margin-right: 0.3rem;
+}
+
+.files {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.files li {
+  display: flex;
+  align-items: centeer;
+  gap: 10px;
+}
+.files li a {
+  color: #212121;
+  font-size: 0.8rem;
+}
+.files li a i {
+  color: #557cd2;
+  font-size: 1.2rem;
+}
+
+.cardTask {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 0.3rem 0.5rem;
+  background: #ffffff;
+  margin-bottom: 0.3rem;
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+.cardTask .titleTask {
+  font-weight: 600;
+  color: #557cd2;
+}
+.cardTask .resTask {
+  font-size: 0.7rem;
+  border-bottom: 1px solid #d6d7d9;
+  padding-bottom: 0.4rem;
+  margin-bottom: 0.4rem;
+}
+.cardTask .deadLine {
+  font-size: 0.6rem;
+  font-weight: 400;
+}
+.cardTask .deadLine .date {
+  font-weight: 600;
+}
+.cardTask .deadLine .date:before {
+  content: "Prazo de Entrega:";
+  margin-right: 0.3rem;
+}
+.cardTask .navTask {
+  min-width: 120px;
+  text-align: center;
+}
+.cardTask .navTask .val {
+  font-weight: 600;
+}
+.cardTask .navTask .bt_goJob {
+  font-size: 0.8rem;
+  background: #557cd2;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

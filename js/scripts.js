@@ -3,6 +3,7 @@ APP.easYDev = {
     setUp: function(){
         this.showPass();
         this.modTerms();
+        this.buscaSide();
     },
 
     //Modal Politica e Termos
@@ -21,6 +22,13 @@ APP.easYDev = {
                 $('#userPass').prop('type', 'password');
            }
             return false;
+        });
+    },
+    //Busca Side
+    buscaSide: function(){
+        $('.btFilter').on("click", function(){
+            $(this).toggleClass('active');
+            $('.buscaEasy').toggleClass('show');
         });
     },
 };
