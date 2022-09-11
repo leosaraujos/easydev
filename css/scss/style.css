@@ -216,6 +216,27 @@ body {
   font-weight: 600;
   font-size: 1.4rem;
 }
+.title-section.filter {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.title-section.filter h3 {
+  margin-bottom: 0 !important;
+}
+.title-section.filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+.title-section.filter ul li a {
+  background: #557cd2;
+  color: #ffffff;
+}
 
 .navAside {
   padding: 0 0 1.5rem 0;
@@ -333,6 +354,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
   width: 80px;
   padding: 0.5rem;
   background-color: #557cd2;
@@ -346,6 +368,17 @@ body {
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 24px;
+}
+
+.issueTask .nameTask {
+  color: #557cd2;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.issueTask .data-horaFinal {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .cardJob {
@@ -489,20 +522,33 @@ body {
   content: "Prazo de Entrega:";
   margin-right: 0.3rem;
 }
-.jobOpen .tasks,
-.taskOpen .tasks {
+
+.listJobs.momeJob,
+.tasks {
   background-color: rgba(214, 215, 217, 0.4);
   padding: 0.8rem 0.8rem 0.4rem 0.8rem;
   border-radius: 4px;
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
 }
-.jobOpen .tasks h4,
-.taskOpen .tasks h4 {
+.listJobs.momeJob h4,
+.tasks h4 {
   font-size: 0.8rem;
   font-weight: 600;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid #5b616b;
+}
+
+.feedback {
+  text-align: center;
+  color: #d6d7d9;
+}
+.feedback i {
+  font-size: 3rem;
+}
+.feedback h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .taskOpen .footerTask {
@@ -593,4 +639,35 @@ body {
   font-size: 0.8rem;
   background: #557cd2;
   color: #ffffff;
+}
+.cardTask.disabled {
+  pointer-events: none;
+}
+.cardTask.disabled .titleTask,
+.cardTask.disabled .resTask,
+.cardTask.disabled .deadLine,
+.cardTask.disabled .navTask {
+  color: #d6d7d9;
+}
+.cardTask.disabled .titleTask a,
+.cardTask.disabled .resTask a,
+.cardTask.disabled .deadLine a,
+.cardTask.disabled .navTask a {
+  color: #d6d7d9;
+  pointer-events: none;
+}
+
+.tableFiles thead {
+  background-color: rgba(224, 234, 255, 0.8);
+}
+.tableFiles tbody a {
+  color: #557cd2;
+  font-size: 1.2rem;
+}
+
+.contentProject p.small {
+  font-size: 0.7rem;
+}
+.contentProject p.small strong {
+  color: #557cd2;
 }
