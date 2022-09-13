@@ -491,7 +491,7 @@ body {
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            text-overflow: ellipsis;
+            text-overflow: ellipsis;            
         }
     }   
 }    
@@ -510,25 +510,6 @@ body {
         border-radius: 4px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
-        .status {
-            color: $grey-1;
-            font-size: 0.8rem;
-            padding: 0.2rem 0.8rem;
-            
-            border-radius: 100px;
-            -moz-border-radius: 100px;
-            -webkit-border-radius: 100px;
-            &.finalizada {
-                background: #A9C75F;
-            }
-            &.andamento {
-                background: #f5dd7d;                
-            }
-            &.cancelada {
-                color: $white;
-                background: #f57d7d;                
-            }
-        }
         .contador {
             background: $white;
             padding: 0.2rem 0.6rem;
@@ -607,6 +588,10 @@ body {
         p {
             font-size: 0.8rem;
         }
+        h4 {
+            font-size: 0.9rem;
+            font-weight: $bol;    
+        }
         .deadLine {
             font-size: 0.8rem;
             font-weight: $reg;
@@ -621,7 +606,54 @@ body {
             }    
         }
     }
+}   
+
+//Player
+.playerArea {
+    .player {
+        border: 1px solid $grey-3;
+        background-color: rgba($grey-3, 0.3);
+        height: 280px;
+    }    
+    ul {
+        list-style: none;
+        margin: 0.5rem 0 0 0;
+        padding: 0;
+        li {
+            a {
+                color: $grey-1;
+                text-decoration: none;
+                font-size: 0.8;    
+                i {
+                    font-size: 1.2rem;
+                    color: $blue-2;    
+                }
+            }
+        }
+    }
+}
+
+//Status Tasks
+.status {
+    color: $grey-1;
+    font-size: 0.7rem;
+    padding: 0.2rem 0.8rem;
+    
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    &.finalizada {
+        background: #A9C75F;
+    }
+    &.andamento {
+        background: #f5dd7d;                
+    }
+    &.cancelada {
+        color: $white;
+        background: #f57d7d;                
+    }
 }     
+
 .listJobs.momeJob,
 .tasks {
     background-color: rgba($grey-3, 0.4);
@@ -642,6 +674,7 @@ body {
         justify-content: space-between;    
         padding-top: 0.5rem;
         strong {
+            max-width: 200px;
             font-size: 0.8rem;    
         }
         div {
@@ -738,6 +771,12 @@ body {
     .deadLine {
         font-size: 0.6rem;
         font-weight: $reg;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .status {
+            padding: 0.2rem 0.8rem;
+        }
         .date {
             font-weight: $bol;    
             &:before {

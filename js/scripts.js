@@ -4,6 +4,7 @@ APP.easYDev = {
         this.showPass();
         this.modTerms();
         this.buscaSide();
+        this.iniciarTask();
     },
 
     //Modal Politica e Termos
@@ -31,7 +32,19 @@ APP.easYDev = {
             $('.buscaEasy').toggleClass('show');
         });
     },
+    //Modal Iniciar Task
+    modTerms: function(){
+        $('.startTask').on("click", function(){
+            $('#modal_startTask').modal('show');
+        });
+    },
 };
 (function(){
     APP.easYDev.setUp();
 })();
+
+
+
+// $(document).ready(function(){
+//     $('#modal_startTask').modal('show');
+// });

@@ -181,7 +181,18 @@
                                             <strong>Requisitos</strong>
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquam, mollitia, delectus est in asperiores hic dolorem natus sequi eum quam quae. Nisi dignissimos aperiam amet saepe adipisci nostrum doloremque.</p>
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, soluta doloribus, voluptate, praesentium dolorum molestias deserunt autem minima ipsa asperiores sunt voluptates explicabo assumenda ipsam necessitatibus sit nihil. Quisquam.</p>    
-
+                                             <hr>       
+                                            <strong>Configuração de Ambiente</strong>
+                                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, soluta doloribus, voluptate, praesentium dolorum molestias deserunt autem minima ipsa asperiores sunt voluptates explicabo assumenda ipsam necessitatibus sit nihil. Quisquam.</p>
+                                            <div class="playerArea">
+                                                <div class="player"></div>
+                                                <ul>
+                                                    <li><a href="" class="btn btnVideo"><i class="fa-solid fa-video"></i> Link vídeo 1</a></li>
+                                                    <li><a href="" class="btn btnVideo"><i class="fa-solid fa-video"></i> Link vídeo 2</a></li>
+                                                    <li><a href="" class="btn btnVideo"><i class="fa-solid fa-video"></i> Link vídeo 3</a></li>
+                                                </ul>
+                                            </div>
+                                            <hr>
                                             <strong>Arquivos</strong>
                                             <ul class="files">
                                                 <li><a href="" target="_blank" class="btn btnDoc"><i class="fa-solid fa-file"></i> Nome do arquivo</a></li>
@@ -193,7 +204,8 @@
                 
                                             <div class="footerTask">
                                                 <div class="deadLine"><span class="date">12/09/2022</span></div>
-                                                <a href="start-task.html" class="btn bt_goJob">Iniciar Tarefa</a>
+                                                <a href="javascript:void(0)" class="btn bt_goJob startTask">Iniciar Tarefa</a>
+                                                
                                             </div>
                                         </div>
                                     </div>                                    
@@ -206,6 +218,37 @@
             </div>
         </div>
     </main>
+
+    <div class="modal" tabindex="-1" id="modal_startTask">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="feedbackTask text-center p-3">
+                        <img src="image/binary-code.svg" alt="e-mail enviado" class="icon-svg mb-4">
+                        <h1 class="h5 mb-0">WOOHOOOOO!</h1>
+                        <strong>Agora é a hora de por a mão na massa!</strong><br><br>
+                        <p class="small">Fique atento aos prazos.<br>Sua tarefa precisa ser entregue até do dia e Horário</p>
+                                
+                        <div class="issueTask">
+                            <span class="nameTask">Nome da Tarefa</span>
+                            <span class="data-horaFinal">12/09/2022 - 12:00:00</span>
+                        </div>                                                                            
+                    </div>      
+                    <hr> 
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Estou ciente que ao clicar no botão de iniciar agora..... lorem ipsum is dolor
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:void(0)" class="btn bt-outline" data-bs-dismiss="modal">Cancelar</a>                    
+                    <a href="my-projects-1.html" class="btn bt-style">Iniciar Agora</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
