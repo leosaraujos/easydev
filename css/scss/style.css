@@ -498,7 +498,9 @@ body {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
 }
+.jobOpen .thumbJob .val .valTask,
 .jobOpen .thumbJob .val span,
+.taskOpen .thumbJob .val .valTask,
 .taskOpen .thumbJob .val span {
   position: absolute;
   padding: 0.2rem 0.8rem;
@@ -508,6 +510,11 @@ body {
   display: table;
   bottom: 0.8rem;
   right: 0.8rem;
+}
+.jobOpen .thumbJob .val .valTask,
+.taskOpen .thumbJob .val .valTask {
+  width: 130px;
+  text-align: right;
 }
 .jobOpen .thumbJob .val:before,
 .taskOpen .thumbJob .val:before {
@@ -526,6 +533,14 @@ body {
   right: 0.8rem;
   font-size: 0.73rem;
   content: "Valor da tarefa";
+}
+.jobOpen .thumbJob .val.proj .btEdit,
+.taskOpen .thumbJob .val.proj .btEdit {
+  position: absolute;
+  right: 148px;
+  bottom: 2px;
+  color: #ffffff;
+  font-size: 1.4rem;
 }
 .jobOpen .thumbJob .bt_goJob,
 .taskOpen .thumbJob .bt_goJob {
@@ -566,24 +581,45 @@ body {
   margin-right: 0.3rem;
 }
 
-.playerArea .player {
-  border: 1px solid #d6d7d9;
-  background-color: rgba(214, 215, 217, 0.3);
-  height: 280px;
+.playerArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.playerArea.colum {
+  grid-template-columns: 1fr;
+}
+.playerArea .player iframe {
+  width: 100%;
+  min-height: 320px;
+  height: auto;
 }
 .playerArea ul {
   list-style: none;
   margin: 0.5rem 0 0 0;
-  padding: 0;
+  padding: 0 0.5rem;
+}
+.playerArea ul li {
+  margin-bottom: 0.2rem;
 }
 .playerArea ul li a {
+  text-align: left;
+  padding: 0.5rem 1.2rem;
+  width: 100%;
   color: #323a45;
   text-decoration: none;
   font-size: 0.8;
+  background-color: rgba(85, 124, 210, 0.4);
 }
 .playerArea ul li a i {
   font-size: 1.2rem;
   color: #557cd2;
+}
+.playerArea ul li a.active {
+  background-color: #557cd2;
+  color: #ffffff;
+}
+.playerArea ul li a.active i {
+  color: #ffffff;
 }
 
 .status {
