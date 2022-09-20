@@ -545,7 +545,6 @@ body {
             -webkit-border-radius: 100px;
         }
         .val {
-            .valTask,
             span {
             position: absolute;
             padding: 0.2rem 0.8rem;
@@ -567,23 +566,29 @@ body {
                 right: 0.8rem;
                 font-size: 0.73rem;
                 content: "Valor total do projeto";    
-            }
+            }            
             &.proj {
+                display: flex;
+                position: absolute;
+                bottom: 0.8rem;
+                right: 0.8rem;
+                gap: 16px;
+                .valTask {}
                 &:before {
-                    position: absolute;
-                    color: $white;
-                    bottom: 2.9rem;
-                    right: 0.8rem;
-                    font-size: 0.73rem;
-                    content: "Valor da tarefa";    
+                    // position: absolute;
+                    // color: $white;
+                    // bottom: 2.9rem;
+                    // right: 0.8rem;
+                    // font-size: 0.73rem;
+                    // content: "Valor da tarefa";    
                 }
+                .btVisible,
                 .btEdit {
-                    position: absolute;
-                    right: 148px;
-                    bottom: 2px;
+                    // position: absolute;
+                    // right: 148px;
+                    // bottom: 2px;
                     color: $white;    
-                    font-size: 1.4rem;
-                   
+                    font-size: 1.4rem;                   
                 }
             }    
         }
@@ -625,10 +630,12 @@ body {
 .playerArea {
     display: grid;
     grid-template-columns: 1fr 1fr;    
+    gap: 16px;
     &.colum {
         grid-template-columns: 1fr;    
         
     }
+    .desc {}
     .player {
         // border: 1px solid $grey-3;
         // background-color: rgba($grey-3, 0.3);

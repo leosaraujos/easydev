@@ -498,9 +498,7 @@ body {
   -moz-border-radius: 100px;
   -webkit-border-radius: 100px;
 }
-.jobOpen .thumbJob .val .valTask,
 .jobOpen .thumbJob .val span,
-.taskOpen .thumbJob .val .valTask,
 .taskOpen .thumbJob .val span {
   position: absolute;
   padding: 0.2rem 0.8rem;
@@ -525,20 +523,18 @@ body {
   font-size: 0.73rem;
   content: "Valor total do projeto";
 }
-.jobOpen .thumbJob .val.proj:before,
-.taskOpen .thumbJob .val.proj:before {
+.jobOpen .thumbJob .val.proj,
+.taskOpen .thumbJob .val.proj {
+  display: flex;
   position: absolute;
-  color: #ffffff;
-  bottom: 2.9rem;
+  bottom: 0.8rem;
   right: 0.8rem;
-  font-size: 0.73rem;
-  content: "Valor da tarefa";
+  gap: 16px;
 }
+.jobOpen .thumbJob .val.proj .btVisible,
 .jobOpen .thumbJob .val.proj .btEdit,
+.taskOpen .thumbJob .val.proj .btVisible,
 .taskOpen .thumbJob .val.proj .btEdit {
-  position: absolute;
-  right: 148px;
-  bottom: 2px;
   color: #ffffff;
   font-size: 1.4rem;
 }
@@ -584,6 +580,7 @@ body {
 .playerArea {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 16px;
 }
 .playerArea.colum {
   grid-template-columns: 1fr;
