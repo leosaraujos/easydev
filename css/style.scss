@@ -720,6 +720,9 @@ body {
         .btn {
             font-size: 0.8rem    
         }
+        label {
+            font-size: 0.8rem;
+        }
     }       
 }    
 .feedback {
@@ -787,6 +790,8 @@ body {
     display: flex;
     gap: 16px;
     align-items: center;
+    justify-content: space-between;
+    
     padding: 0.3rem 0.5rem;
     background: $white;
     margin-bottom: 0.3rem;
@@ -798,14 +803,29 @@ body {
         font-weight: $bol;
         color: $blue-2;
     }
-    .resTask {
-        font-size: 0.7rem;    
-        border-bottom: 1px solid $grey-3;
+    .user {
+        width: 100%;
+        font-size: 0.8rem;
+        padding-top: 0.4rem;
+        font-weight: $reg;        
+        text-decoration: none;
+        color: $blue-2;
+        &:before {
+            font-weight: $bol;    
+            content: "Responsável:";    
+            margin-right: 0.3rem;    
+            pointer-events: none;
+            color: $grey-1;
+        }
+    }    
+    .resTask {        
+        font-size: 0.7rem;            
         padding-bottom: 0.4rem;
         margin-bottom: 0.4rem;
     }    
-    .deadLine {
-        font-size: 0.6rem;
+    .deadLine {        
+        font-size: 0.8rem;
+        padding-bottom: 0.4rem;
         font-weight: $reg;
         display: flex;
         align-items: center;
@@ -814,8 +834,9 @@ body {
             padding: 0.2rem 0.8rem;
         }
         .date {
-            font-weight: $bol;    
+            font-weight: $reg;
             &:before {
+                font-weight: $bol;
                 content: "Prazo de Entrega:";
                 margin-right: 0.3rem;    
             }
@@ -831,6 +852,7 @@ body {
             font-size: 0.8rem;
             background: $blue-2;
             color: $white;
+            margin: 0.5rem 0;
         }            
     }     
     &.disabled {

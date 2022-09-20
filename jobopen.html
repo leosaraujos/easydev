@@ -167,14 +167,49 @@
                                             <strong>Configuração de Ambiente</strong>
                                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, soluta doloribus, voluptate, praesentium dolorum molestias deserunt autem minima ipsa asperiores sunt voluptates explicabo assumenda ipsam necessitatibus sit nihil. Quisquam.</p>
                                             <div class="playerArea colum">
-                                                <div class="player mb-1">
-                                                    <iframe src="https://www.youtube.com/embed/8GI91FV3Pg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                </div>
-                                                <ul>
-                                                    <li><a href="" class="btn btnVideo active"><i class="fa-solid fa-video"></i> Link vídeo 1</a></li>
-                                                    <li><a href="" class="btn btnVideo"><i class="fa-solid fa-video"></i> Link vídeo 2</a></li>
-                                                    <li><a href="" class="btn btnVideo"><i class="fa-solid fa-video"></i> Link vídeo 3</a></li>
-                                                </ul>                                                
+                                                <div class="accordion" id="accordionExample">
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        Vídeo 1
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <div class="player mb-1">
+                                                                <iframe src="https://www.youtube.com/embed/8GI91FV3Pg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                            </div>  
+                                                            <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vel excepturi expedita itaque deleniti blanditiis magni, dolores debitis. Quia hic possimus vitae inventore voluptatem, corporis veritatis eaque necessitatibus, modi dolor architecto magni.</p> 
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            Vídeo 2
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                        <div class="player mb-1">
+                                                            <iframe src="https://www.youtube.com/embed/8GI91FV3Pg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        </div>  
+                                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vel excepturi expedita itaque deleniti blanditiis magni, dolores debitis. Quia hic possimus vitae inventore voluptatem, corporis veritatis eaque necessitatibus, modi dolor architecto magni.</p> 
+                                                      </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                      <h2 class="accordion-header" id="headingThree">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                          Vídeo 3
+                                                        </button>
+                                                      </h2>
+                                                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                        <div class="player mb-1">
+                                                            <iframe src="https://www.youtube.com/embed/8GI91FV3Pg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                        </div>  
+                                                        <p class="mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et vel excepturi expedita itaque deleniti blanditiis magni, dolores debitis. Quia hic possimus vitae inventore voluptatem, corporis veritatis eaque necessitatibus, modi dolor architecto magni.</p> 
+                                                      </div>
+                                                    </div>
+                                                  </div>
                                             </div>
                                             <hr>
                                             <strong>Arquivos</strong>
@@ -193,20 +228,28 @@
                                             <div class="filterTask mb-3">
                                                 <strong>Faça uma pesquisa através do status da tarefa</strong>
                                                 <div>
-                                                    <a href="" class="btn bt-style">Finalizadas</a>
-                                                    <a href="" class="btn bt-style">Em Andamento</a>
+                                                  <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="finalizadas" value="option1">
+                                                    <label class="form-check-label" for="finalizadas">Finalizadas</label>
+                                                  </div>
+                                                  <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="checkbox" id="andamento" value="option2">
+                                                    <label class="form-check-label" for="andamento">Em Andamento</label>
+                                                  </div>
                                                 </div>
                                             </div>
 
                                             <div class="cardTask">
                                                 <div class="infoTask">
                                                     <div class="titleTask">Nome da Tarefa</div>
-                                                    <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
-                                                    <div class="deadLine"><span class="date">12/09/2022</span><div class="status finalizada">Finalizada</div></div>
+                                                    <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
+                                                    <div class="deadLine"><span class="date">12/09/2022</span></div>
+                                                    <a href="" class="user">$nameUser</a>                                                                                                        
                                                 </div>
                                                 <div class="navTask">
                                                     <div class="val">R$ 800,00</div>
                                                     <a href="singleTask.html" class="btn bt_goJob" title="Mais Detalhes">Detalhes</a>
+                                                    <div class="status finalizada">Finalizada</div>
                                                 </div>    
                                             </div>
 
@@ -214,11 +257,13 @@
                                                 <div class="infoTask">
                                                     <div class="titleTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rem dolor.</div>
                                                     <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
-                                                    <div class="deadLine"><span class="date">12/09/2022</span><div class="status andamento">Em Andamento</div></div>
+                                                    <div class="deadLine"><span class="date">12/09/2022</span></div>
+                                                    <a href="" class="user">$nameUser</a>
                                                 </div>
                                                 <div class="navTask">
                                                     <div class="val">R$ 230,00</div>
                                                     <a href="singleTask.html" class="btn bt_goJob" title="Mais Detalhes">Detalhes</a>
+                                                    <div class="status andamento">Em Andamento</div>
                                                 </div>    
                                             </div>
 
@@ -226,11 +271,13 @@
                                                 <div class="infoTask">
                                                     <div class="titleTask">Nome da Tarefa</div>
                                                     <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
-                                                    <div class="deadLine"><span class="date">12/09/2022</span><div class="status cancelada">Cancelada</div></div>
+                                                    <div class="deadLine"><span class="date">12/09/2022</span></div>
+                                                    <a href="" class="user">$nameUser</a>
                                                 </div>
                                                 <div class="navTask">
                                                     <div class="val">R$ 1.400,00</div>
                                                     <a href="singleTask.html" class="btn bt_goJob" title="Mais Detalhes">Detalhes</a>
+                                                    <div class="status cancelada">Cancelada</div>
                                                 </div>    
                                             </div>
 
@@ -238,11 +285,13 @@
                                                 <div class="infoTask">
                                                     <div class="titleTask">Nome da Tarefa</div>
                                                     <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
-                                                    <div class="deadLine"><span class="date">12/09/2022</span><div class="status finalizada">Finalizada</div></div>
+                                                    <div class="deadLine"><span class="date">12/09/2022</span></div>
+                                                    <a href="" class="user">$nameUser</a>
                                                 </div>
                                                 <div class="navTask">
                                                     <div class="val">R$ 800,00</div>
                                                     <a href="singleTask.html" class="btn bt_goJob" title="Mais Detalhes">Detalhes</a>
+                                                    <div class="status finalizada">Finalizada</div>
                                                 </div>    
                                             </div>
 
@@ -250,11 +299,13 @@
                                                 <div class="infoTask">
                                                     <div class="titleTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, rem dolor.</div>
                                                     <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
-                                                    <div class="deadLine"><span class="date">12/09/2022</span><div class="status andamento">Em Andamento</div></div>
+                                                    <div class="deadLine"><span class="date">12/09/2022</span></div>
+                                                    <a href="" class="user">$nameUser</a>
                                                 </div>
                                                 <div class="navTask">
                                                     <div class="val">R$ 230,00</div>
                                                     <a href="singleTask.html" class="btn bt_goJob" title="Mais Detalhes">Detalhes</a>
+                                                    <div class="status andamento">Em Andamento</div>
                                                 </div>    
                                             </div>
 
@@ -262,11 +313,13 @@
                                                 <div class="infoTask">
                                                     <div class="titleTask">Nome da Tarefa</div>
                                                     <div class="resTask">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nam magni quisquam explicabo id?</div>
-                                                    <div class="deadLine"><span class="date">12/09/2022</span><div class="status cancelada">Cancelada</div></div>
+                                                    <div class="deadLine"><span class="date">12/09/2022</span></div>
+                                                    <a href="" class="user">$nameUser</a>
                                                 </div>
                                                 <div class="navTask">
                                                     <div class="val">R$ 1.400,00</div>
                                                     <a href="singleTask.html" class="btn bt_goJob" title="Mais Detalhes">Detalhes</a>
+                                                    <div class="status cancelada">Cancelada</div>
                                                 </div>    
                                             </div>
                                         </div>                                        
