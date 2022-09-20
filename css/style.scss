@@ -493,7 +493,13 @@ body {
             overflow: hidden;
             text-overflow: ellipsis;            
         }
-    }   
+    } 
+    .navAdm {
+        border-top: 1px solid $grey-3;
+        display: flex;
+        align-items: center;        
+        justify-content: space-around;
+    }  
 }    
 
 //jobOpen / taskOpen
