@@ -222,16 +222,42 @@
                                                 <textarea class="form-control" id="reqProject" placeholder="..." required></textarea>
                                             </div>
 
-                                            <div class="form-group mb-3">
-                                                <label for="configamb">Configuração de Ambiente</label>          
-                                                <input type="text" class="form-control" id="configamb" placeholder="URL://">
+                                            <div class="form-group mb-3 titleAction">
+                                                <strong>Vídeos</strong>
+                                                <a href="javascript:void(0)" class="btn bt-style addVideo">Adicione um Vídeo</a>
                                             </div>
 
-                                            <div class="form-group mb-3">
-                                                <label for="arq-add-File">Arquivos Adicionais</label>          
-                                                <input class="form-control form-control-sm" type="file" id="arq-add-File">                  
-                                                <p class="small">*O arquivo deve ter no <strong>Máx 1.5mb</strong>, as extensões permitidas são <strong>DOC, DOCX, PDF</strong></p>
+                                            <div class="form-group mb-4">
+                                                <div class="col-sm-12 col-md-12">
+                                                    <table class="table table-striped table-hover tableFiles">
+                                                        <thead>
+                                                            <tr>
+                                                              <th scope="col">Nome do Vídeo</th>
+                                                              <th scope="col" class="text-center">Action</th>
+                                                              </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Vídeo 1</td>
+                                                                <td class="text-center">
+                                                                    <a href="" class="trashVideo" title="Remover Vídeo"><i class="fa-solid fa-trash"></i></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Vídeo 2</td>
+                                                                <td class="text-center">
+                                                                    <a href="" class="trashVideo" title="Remover Vídeo"><i class="fa-solid fa-trash"></i></a>
+                                                                </td>
+                                                            </tr>                                                
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
+                                            
+                                            <div class="form-group mb-3 titleAction">
+                                                <strong>Arquivos</strong>
+                                                <a href="javascript:void(0)" class="btn bt-style addFile">Adicione um Arquivo</a>
+                                            </div>                                            
 
                                             <div class="form-group mb-4">
                                                 <div class="col-sm-12 col-md-12">
@@ -273,8 +299,22 @@
                                                     <label for="valProject">Valor do Projeto</label>          
                                                     <input type="text" class="form-control" id="valProject" placeholder="">  
                                                 </div>    
+                                            </div>                                            
+
+                                            <hr>
+
+                                            <div class="form-group row mb-3">
+                                                <div class="col-sm-12 col-md-12">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="viewJob" id="shoJob" value="shoJob" checked>
+                                                        <label class="form-check-label" for="shoJob">Habilitar Projeto</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="viewJob" id="hideJob" value="hideJob">
+                                                        <label class="form-check-label" for="hideJob">Desabilitar Projeto</label>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            
                                             
                                             <hr>
 
@@ -283,7 +323,7 @@
                                                     <a href="" class="w-100 btn btn-md bt-outline" >Cancelar</a>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6">
-                                                    <a href="success-create-project.html" class="w-100 btn btn-md bt-style" >Criar Projeto</a>   
+                                                    <a href="javascript:void(0)" class="w-100 btn btn-md bt-style addProject" >Criar Projeto</a>   
                                                 </div>    
                                             </div>
                                         </form>                                        
@@ -306,6 +346,74 @@
             </div>
         </div>
     </main>
+
+    <div class="modal" tabindex="-1" id="modal_addVideo">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="feedbackTask p-3">
+                        <div class="text-center mb-3">
+                            <h1 class="h5 mb-0">Vídeos</h1>
+                            <strong>Adicione um vídeo, insira a URL do vídeo abaixo.</strong>
+                        </div> 
+
+                        <div class="form-group mb-3">
+                            <input type="text" class="form-control" id="configamb" placeholder="URL://">     
+                            <p class="small">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident enim rerum odit amet accusamus.</p>
+                        </div> 
+                        
+                        
+                    </div>   
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:void(0)" class="btn bt-outline" data-bs-dismiss="modal">Cancelar</a>                    
+                    <a href="javascript:void(0)" class="btn bt-style">Adicionar Vídeo</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="modal_addFile">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="feedbackTask p-3">
+                        <div class="text-center mb-3">
+                            <h1 class="h5 mb-0">Arquivos Adicionais</h1>
+                            <strong>Adicione um arquivo, mas fique atento as especificações do arquivo.</strong>
+                        </div>   
+                        <div class="form-group mb-3">
+                            <input class="form-control form-control-sm" type="file" id="arq-add-File">                  
+                            <p class="small">*O arquivo deve ter no <strong>Máx 1.5mb</strong>, as extensões permitidas são <strong>DOC, DOCX, PDF</strong></p>
+                        </div>                                                                          
+                    </div>                          
+                </div>
+                <div class="modal-footer">
+                    <a href="javascript:void(0)" class="btn bt-outline" data-bs-dismiss="modal">Cancelar</a>                    
+                    <a href="javascript:void(0)" class="btn bt-style">Adicionar Arquivo</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="success__addProject">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="feedbackTask text-center p-3">
+                        <img src="image/briefing.svg" alt="e-mail enviado" class="icon-svg mb-4">
+                        <h1 class="h5 mb-0">WOOHOOOOO!</h1>
+                        <strong>O Projeto foi criado com sucesso!</strong><br><br>
+                        <p class="small">Agora falta você adicionar as tarefas!<br>Clique no botão abaixo para adicionar uma tarefa</p>
+                    </div>                                              
+                </div>
+                <div class="modal-footer">
+                    <a href="jobopen.html" class="btn bt-outline">Ver Projeto</a>                    
+                    <a href="create-project-task.html" class="btn bt-style">Adicionar Tarefa</a>                    
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>

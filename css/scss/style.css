@@ -583,6 +583,41 @@ body {
   margin-right: 0.3rem;
 }
 
+.titleAction {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tableEasy tr td:first-child {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.tableEasy tr td:last-child a {
+  margin: 0.5rem;
+}
+.tableEasy .task a {
+  font-size: 0.9rem;
+  color: #9a4ab7;
+}
+.tableEasy .project a {
+  color: #557cd2;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.tableEasy .user,
+.tableEasy .val,
+.tableEasy .dt-inicio,
+.tableEasy .dt-fim,
+.tableEasy .estm {
+  font-size: 0.9rem;
+}
+.tableEasy .val,
+.tableEasy .estm {
+  font-weight: 600;
+}
+
 .playerArea {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -828,9 +863,15 @@ body {
   pointer-events: none;
 }
 
+.tableEasy td,
+.tableFiles td {
+  vertical-align: middle;
+}
+.tableEasy thead,
 .tableFiles thead {
   background-color: rgba(224, 234, 255, 0.8);
 }
+.tableEasy tbody a,
 .tableFiles tbody a {
   color: #557cd2;
   font-size: 1.2rem;

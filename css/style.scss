@@ -632,6 +632,55 @@ body {
     }
 }   
 
+//Title Action
+.titleAction {
+    width: 100%;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}   
+
+//My Projects
+.tableEasy {
+    tr {
+        td {            
+            &:first-child {
+                font-size: 0.8rem;
+                font-weight: $bol;        
+            }    
+            &:last-child {
+                a {
+                    margin: 0.5rem;    
+                }
+            }    
+        }
+    }    
+    .task {
+        a {
+            font-size: 0.9rem;
+            color: $purple;
+        }        
+    }
+    .project {
+        a {
+            color: $blue-2;
+            font-size: 0.9rem;
+            font-weight: $bol;
+        }        
+    }
+    .user,
+    .val,
+    .dt-inicio,
+    .dt-fim,
+    .estm {
+        font-size: 0.9rem;
+    }     
+    .val,
+    .estm {
+        font-weight: $bol;
+    }        
+}
+
 //Player
 .playerArea {
     display: grid;
@@ -883,8 +932,12 @@ body {
     }
 }    
 
-//tableFiles
+//table
+.tableEasy,    
 .tableFiles {
+    td {
+        vertical-align: middle;    
+    }
     thead {
         background-color: rgba($blue-3 , 0.8);
     }

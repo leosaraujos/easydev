@@ -5,6 +5,10 @@ APP.easYDev = {
         this.modTerms();
         this.buscaSide();
         this.iniciarTask();
+        this.addProject();
+        this.addTask();
+        this.addVideo();
+        this.addFile();
     },
 
     //Modal Politica e Termos
@@ -33,9 +37,33 @@ APP.easYDev = {
         });
     },
     //Modal Iniciar Task
-    modTerms: function(){
+    iniciarTask: function(){
         $('.startTask').on("click", function(){
             $('#modal_startTask').modal('show');
+        });
+    },    
+    //Modal Adicionar Task
+    addProject: function(){
+        $('.addProject').on("click", function(){
+            $('#success__addProject').modal('show');
+        });
+    },    
+    //Modal Adicionar Task
+    addTask: function(){
+        $('.addTask').on("click", function(){
+            $('#success__addTask').modal('show');
+        });
+    },
+    //Modal Adicionar Vídeo
+    addVideo: function(){
+        $('.addVideo').on("click", function(){
+            $('#modal_addVideo').modal('show');
+        });
+    },
+    //Modal Adicionar Arquivo
+    addFile: function(){
+        $('.addFile').on("click", function(){
+            $('#modal_addFile').modal('show');
         });
     },
 };
@@ -46,5 +74,5 @@ APP.easYDev = {
 
 
 // $(document).ready(function(){
-//     $('#modal_startTask').modal('show');
+//     $('#success__addProject').modal('show');
 // });
