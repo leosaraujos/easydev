@@ -141,12 +141,38 @@
                             </div>
                             <div class="title-section filter">
                                 <h3 class="mb-3">Meus Projetos</h3>
-                                <ul>
-                                    <li><a class="btn" href="">Em Andamento</a></li>
-                                    <li><a class="btn" href="">Finalizados</a></li>
-                                    <li><a class="btn" href="create-project.html">Adicionar</a></li>
-                                </ul>
-                            </div>
+                                <div class="filterAll">
+                                    <form action="">
+                                        <div class="form-group mb-3">
+                                            <label for="usertask">Nome do Usuário ou Task</label>          
+                                            <input type="text" class="form-control" id="usertask" placeholder="Pesquise pelo nome do Usuário ou pela Task">                                        
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="project">Projetos</label>
+                                            <select class="form-control" id="project">
+                                                <option >Selecione um Projeto</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <label for="status">Status</label>
+                                            <select class="form-control" id="status">
+                                                <option >Selecione um Status</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group mb-3">
+                                            <br>
+                                            <a class="btn bt-style" href="create-project.html">Adicionar</a>
+                                        </div>
+                                    </form>                                
+                                </div>
+                            </div>    
                             <div class="listJobs">
                                 <table class="table table-striped table-hover tableEasy">
                                     <thead>

@@ -632,6 +632,30 @@ body {
     }
 }   
 
+//filterAll
+.filterAll {    
+    padding: 0.4rem 0.8rem;
+    background-color: rgba($grey-3, 0.3);    
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+.filterAll form label {
+    font-size: 0.8rem;    
+}
+.filterAll form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+}        
+.filterAll form #usertask {
+    min-width: 380px;
+}    
+.filterAll form select {
+    min-width: 210px;
+}
+
 //Title Action
 .titleAction {
     width: 100%;
