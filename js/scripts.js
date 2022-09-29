@@ -9,6 +9,7 @@ APP.easYDev = {
         this.addTask();
         this.addVideo();
         this.addFile();
+        this.hideJob();
     },
 
     //Modal Politica e Termos
@@ -64,6 +65,12 @@ APP.easYDev = {
     addFile: function(){
         $('.addFile').on("click", function(){
             $('#modal_addFile').modal('show');
+        });
+    },
+    //Hode Job
+    hideJob: function(){
+        $('.btVisible').on("click", function(){
+            $(this).toggleClass('active');            
         });
     },
 };

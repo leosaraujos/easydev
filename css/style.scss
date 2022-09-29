@@ -309,40 +309,37 @@ body {
     }
 }    
 
-.navHeader_intern {    
-    list-style: none;
+.navHeader_intern {        
     padding: 0;
     margin: 0;
-    display: flex;
-    gap: 24px;        
-    li {
+    width: 100%;     
+    .navbar-brand {
+        img {
+            height: 42px;    
+        }    
+    }
+    .nav-item {
         a {
             color: $blue-2;
+            &.active,
             &:hover {
                 color: $purple;
                 border-color: transparent;
             }
+            .user {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+            &.dropdown-toggle {
+                &:after {
+                    display: none;    
+                }       
+            }
         }
         i {
             font-size: 24px;
-        }
-        &.user a {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: $bol;
-            text-align: right;
-            .nameUser {
-                color: $black;
-                &:before {
-                  content: "Bem vindo";
-                  line-height: 0.2rem;
-                  font-weight: $lig;
-                  font-size: 0.7rem;
-                  display: block;  
-                }
-            }
-        }
+        }        
     }
 }   
 
@@ -594,7 +591,7 @@ body {
                     // right: 148px;
                     // bottom: 2px;
                     color: $white;    
-                    font-size: 1.4rem;                   
+                    font-size: 1.4rem;                                       
                 }
             }    
         }
@@ -631,6 +628,14 @@ body {
         }
     }
 }   
+
+//HideJob
+.btVisible {
+    &.active {
+        color: $white !important;
+        background: $red-2;
+    }    
+}
 
 //filterAll
 .filterAll {    

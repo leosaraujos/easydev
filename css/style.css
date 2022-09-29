@@ -271,38 +271,30 @@ body {
 }
 
 .navHeader_intern {
-  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  gap: 24px;
+  width: 100%;
 }
-.navHeader_intern li a {
+.navHeader_intern .navbar-brand img {
+  height: 42px;
+}
+.navHeader_intern .nav-item a {
   color: #557cd2;
 }
-.navHeader_intern li a:hover {
+.navHeader_intern .nav-item a.active, .navHeader_intern .nav-item a:hover {
   color: #9a4ab7;
   border-color: transparent;
 }
-.navHeader_intern li i {
-  font-size: 24px;
-}
-.navHeader_intern li.user a {
+.navHeader_intern .nav-item a .user {
   display: flex;
   align-items: center;
   gap: 12px;
-  font-weight: 600;
-  text-align: right;
 }
-.navHeader_intern li.user a .nameUser {
-  color: #212121;
+.navHeader_intern .nav-item a.dropdown-toggle:after {
+  display: none;
 }
-.navHeader_intern li.user a .nameUser:before {
-  content: "Bem vindo";
-  line-height: 0.2rem;
-  font-weight: 200;
-  font-size: 0.7rem;
-  display: block;
+.navHeader_intern .nav-item i {
+  font-size: 24px;
 }
 
 .content-center {
@@ -581,6 +573,11 @@ body {
 .taskOpen .descJob .deadLine .date:before {
   content: "Prazo de Entrega:";
   margin-right: 0.3rem;
+}
+
+.btVisible.active {
+  color: #ffffff !important;
+  background: #e31c3d;
 }
 
 .filterAll {
