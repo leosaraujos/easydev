@@ -499,11 +499,19 @@ body {
     }  
 }    
 
+.headTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+}        
+
 //jobOpen / taskOpen
 .jobOpen,
 .taskOpen {
     .titleJob {
         font-weight: $bol;    
+        margin-bottom: 0;
     }
     .thumbJob {
         height:  190px;

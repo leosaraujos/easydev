@@ -445,9 +445,17 @@ body {
   justify-content: space-around;
 }
 
+.headTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+}
+
 .jobOpen .titleJob,
 .taskOpen .titleJob {
   font-weight: 600;
+  margin-bottom: 0;
 }
 .jobOpen .thumbJob,
 .taskOpen .thumbJob {
