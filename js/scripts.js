@@ -4,6 +4,7 @@ APP.easYDev = {
         this.showPass();
         this.modTerms();
         this.buscaSide();
+        this.jobSide();
         this.iniciarTask();
         this.addProject();
         this.addTask();
@@ -35,6 +36,14 @@ APP.easYDev = {
         $('.btFilter').on("click", function(){
             $(this).toggleClass('active');
             $('.buscaEasy').toggleClass('show');
+        });
+    },
+    //Job Side
+    jobSide: function(){
+        $('.btJob').on("click", function(){
+            $(this).toggleClass('active');
+            $('#colJob').toggleClass('hideCol');
+            $('#colTask').toggleClass('fullCol');
         });
     },
     //Modal Iniciar Task

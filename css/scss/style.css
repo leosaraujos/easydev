@@ -452,6 +452,45 @@ body {
   margin-bottom: 0.8rem;
 }
 
+.btJob.active {
+  background: #9a4ab7;
+  transition: 0.3s all;
+}
+.btJob.active:before {
+  content: "Mostrar Projeto";
+  font-size: 0.8rem;
+  margin-right: 0.5rem;
+  transition: 0.3s all;
+}
+.btJob img {
+  height: 32px;
+  fill: #ffffff;
+}
+
+#colJob {
+  opacity: 1;
+  transition: 0.3s all;
+}
+#colJob.hideCol {
+  width: 0rem;
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s all;
+  overflow: hidden;
+}
+
+#colTask {
+  transition: 0.3s all;
+}
+#colTask.fullCol {
+  width: 100%;
+  transition: 0.3s all;
+}
+#colTask.fullCol .tasks .filterTask strong {
+  max-width: 380px;
+}
+
 .jobOpen .titleJob,
 .taskOpen .titleJob {
   font-weight: 600;
