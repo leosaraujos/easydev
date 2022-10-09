@@ -387,6 +387,7 @@ body {
 
 .cardJob {
   width: 17rem;
+  padding-bottom: 40px;
 }
 .cardJob a {
   text-decoration: none;
@@ -439,6 +440,11 @@ body {
   text-overflow: ellipsis;
 }
 .cardJob .navAdm {
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  bottom: 0;
+  height: 40px;
   border-top: 1px solid #d6d7d9;
   display: flex;
   align-items: center;
@@ -456,7 +462,7 @@ body {
   background: #9a4ab7;
   transition: 0.3s all;
 }
-.btJob.active:before {
+s .btJob.active:before {
   content: "Mostrar Projeto";
   font-size: 0.8rem;
   margin-right: 0.5rem;
@@ -953,4 +959,112 @@ body {
 }
 .contentProject p.small strong {
   color: #557cd2;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .breadcrumb {
+    display: none;
+  }
+  .navHeader_intern .navbar .container {
+    padding: 0;
+  }
+  .navHeader_intern .navbar .container .navbar-brand img {
+    height: 32px;
+  }
+  .content-jobs .asideNav {
+    display: none;
+  }
+  .feedJobs .cardJob {
+    width: 10rem;
+  }
+  .feedJobs .cardJob a .thumbJob {
+    height: 100px;
+  }
+  .feedJobs .cardJob a .thumbJob .val {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+  .feedJobs .cardJob a .titleJob {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+  .tasks .filterTask {
+    display: block;
+  }
+  .tasks .filterTask div {
+    margin-top: 0.2rem;
+  }
+  .tasks .filterTask strong {
+    max-width: 100%;
+    height: 32px;
+  }
+  .tasks .cardTask {
+    display: block;
+  }
+  .tasks .cardTask .user {
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.4rem;
+    display: block;
+    border-bottom: 1px solid #d6d7d9;
+  }
+  .tasks .cardTask .navTask {
+    display: grid;
+    grid-template-areas: "valor sts" "detal detal";
+  }
+  .tasks .cardTask .navTask .val {
+    grid-area: valor;
+    margin-bottom: 0.3rem;
+  }
+  .tasks .cardTask .navTask .val:before {
+    content: "Valor:";
+    margin-right: 0.5rem;
+  }
+  .tasks .cardTask .navTask .status {
+    grid-area: sts;
+    margin-bottom: 0.3rem;
+  }
+  .tasks .cardTask .navTask .btn {
+    padding: 10px 12px;
+    grid-area: detal;
+  }
+  #colJob {
+    transition: 0.3s all;
+    opacity: 1;
+  }
+  #colJob.hideCol {
+    width: 100% !important;
+    height: 0rem !important;
+    transition: 0.3s all;
+    opacity: 0;
+  }
+  .playerArea {
+    grid-template-columns: 1fr;
+  }
+  .jobOpen .thumbJob,
+.taskOpen .thumbJob {
+    height: 280px;
+  }
+  .jobOpen .thumbJob img,
+.taskOpen .thumbJob img {
+    widows: auto;
+    height: 100%;
+  }
+  .jobOpen .thumbJob .sts-time,
+.taskOpen .thumbJob .sts-time {
+    display: grid;
+    gap: 4px;
+  }
+  .jobOpen .thumbJob .sts-time .status,
+.taskOpen .thumbJob .sts-time .status {
+    text-align: center;
+  }
+  .title-section.filter {
+    display: block;
+  }
+  .title-section.filter .filterAll form {
+    display: block;
+  }
+  .title-section.filter .filterAll form #usertask {
+    min-width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
