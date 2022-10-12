@@ -2,6 +2,7 @@ var APP = APP || {}
 APP.easYDev = {
     setUp: function(){
         this.showPass();
+        this.sticky();
         this.modTerms();
         this.buscaSide();
         this.jobSide();
@@ -13,6 +14,23 @@ APP.easYDev = {
         this.hideJob();
     },
 
+   // Sticky Navbar
+   sticky: function(){
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.header-interna').addClass('style-fixed').css('transition', 'all 0.3s ease');                
+            } else {
+                $('.header-interna').removeClass('style-fixed').css('transition', 'all 0.3s ease');                
+            }
+            if ($(this).scrollTop() > 1) {
+                $('.asideNav').addClass('style-fixed');
+                $('.feedJobs').css('justify-content', 'space-between');                
+            } else {
+                $('.asideNav').removeClass('style-fixed');                
+                $('.feedJobs').css('justify-content', 'flex-start');                
+            }
+        });
+    },
     //Modal Politica e Termos
     modTerms: function(){
         $('.showTermos').on("click", function(){
