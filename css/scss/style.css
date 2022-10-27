@@ -1062,6 +1062,96 @@ s .btJob.active:before {
   font-size: 1.5rem;
 }
 
+.chat {
+  position: absolute;
+  bottom: 32px;
+  right: 32px;
+  z-index: 9;
+}
+.chat .bt-chat {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background: #557cd2;
+  color: #ffffff;
+  z-index: 2;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+.chat .bt-chat.close {
+  bottom: -18px;
+  right: -18px;
+}
+.chat .bt-chat.open {
+  top: -18px;
+  right: -18px;
+}
+.chat .bt-chat i {
+  line-height: 38px;
+  font-size: 32px;
+}
+.chat .bt-chat:hover {
+  background: #212121;
+  color: #ffffff;
+}
+.chat .talk {
+  border: 1px solid #d6d7d9;
+  background: #e0eaff;
+  padding: 1rem 0.5rem;
+  width: 380px;
+  height: 480px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+.chat .talk .form-group {
+  width: 100%;
+  position: absolute;
+  left: 0.8rem;
+  bottom: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #d6d7d9;
+}
+.chat .talk .flx {
+  display: flex;
+  align-items: center;
+}
+.chat .talk .btSend {
+  background: #557cd2;
+  color: #ffffff;
+}
+.chat .talk .conversation .line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.chat .talk .conversation .line .talkUser:before {
+  content: "Dev";
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.chat .talk .conversation .line .talkUser span {
+  background: #02bfe7;
+}
+.chat .talk .conversation .line .talkEasy:before {
+  content: "easYDev";
+  display: block;
+  margin-bottom: 0.2rem;
+}
+.chat .talk .conversation .line .talkEasy span {
+  background: #9a4ab7;
+}
+.chat .talk .conversation .line span {
+  padding: 0.4rem 0.6rem;
+  color: #ffffff;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
   .no-mob {
     display: none;
