@@ -1218,15 +1218,21 @@ body {
             color: $white;    
         }           
         .conversation {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 50vw;
             .line {
-                display: flex;
-                justify-content: space-between;
-                margin-bottom: 1.0rem;
+                &:nth-child(odd) {
+                    align-self: flex-end;    
+                }                
                 .talkUser {
                     &:before {
                         content: "Dev";
                         display: block;
-                        margin-bottom: 0.2rem
+                        margin-bottom: 0.2rem;
+                        font-size: 0.8rem;
+                        font-weight: $bol;
                     }
                     span {
                         background: $blue-1;                                        
@@ -1236,7 +1242,9 @@ body {
                     &:before {
                         content: "easYDev";
                         display: block;
-                        margin-bottom: 0.2rem
+                        margin-bottom: 0.2rem;
+                        font-size: 0.8rem;
+                        font-weight: $bol;
                     }
                     span {
                         background: $purple;                    

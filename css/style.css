@@ -1113,15 +1113,21 @@ s .btJob.active:before {
   background: #557cd2;
   color: #ffffff;
 }
-.chat .talk .conversation .line {
+.chat .talk .conversation {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50vw;
+}
+.chat .talk .conversation .line:nth-child(odd) {
+  align-self: flex-end;
 }
 .chat .talk .conversation .line .talkUser:before {
   content: "Dev";
   display: block;
   margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .chat .talk .conversation .line .talkUser span {
   background: #02bfe7;
@@ -1130,6 +1136,8 @@ s .btJob.active:before {
   content: "easYDev";
   display: block;
   margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 .chat .talk .conversation .line .talkEasy span {
   background: #9a4ab7;
