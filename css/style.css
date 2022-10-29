@@ -1058,24 +1058,28 @@ s .btJob.active:before {
   right: 32px;
   z-index: 9;
 }
+.chat.close .bt-chat {
+  top: -52px;
+  right: -18px;
+}
+.chat.close .talk {
+  height: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+}
 .chat .bt-chat {
   position: absolute;
   width: 52px;
   height: 52px;
+  top: -18px;
+  right: -18px;
   background: #557cd2;
   color: #ffffff;
   z-index: 2;
   border-radius: 100px;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
-}
-.chat .bt-chat.close {
-  bottom: -18px;
-  right: -18px;
-}
-.chat .bt-chat.open {
-  top: -18px;
-  right: -18px;
 }
 .chat .bt-chat i {
   line-height: 38px;
@@ -1118,9 +1122,21 @@ s .btJob.active:before {
   flex-direction: column;
   align-items: flex-start;
   max-width: 50vw;
+  height: 380px;
+  overflow-y: scroll;
 }
 .chat .talk .conversation .line:nth-child(odd) {
   align-self: flex-end;
+}
+.chat .talk .conversation .line .hour {
+  position: absolute;
+  font-size: 0.6rem;
+  right: 0;
+  top: 3px;
+  color: #212121;
+}
+.chat .talk .conversation .line .talkUser {
+  position: relative;
 }
 .chat .talk .conversation .line .talkUser:before {
   content: "Dev";
@@ -1131,6 +1147,9 @@ s .btJob.active:before {
 }
 .chat .talk .conversation .line .talkUser span {
   background: #02bfe7;
+}
+.chat .talk .conversation .line .talkEasy {
+  position: relative;
 }
 .chat .talk .conversation .line .talkEasy:before {
   content: "easYDev";

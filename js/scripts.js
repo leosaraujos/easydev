@@ -12,6 +12,7 @@ APP.easYDev = {
         this.addVideo();
         this.addFile();
         this.hideJob();
+        this.btChat();
     },
 
    // Sticky Navbar
@@ -49,6 +50,12 @@ APP.easYDev = {
             return false;
         });
     },
+    //Chat
+    btChat: function(){
+        $('.bt-chat').on("click", function(){
+            $(".chat").toggleClass('close');
+        });
+    },    
     //Busca Side
     buscaSide: function(){
         $('.btFilter').on("click", function(){
