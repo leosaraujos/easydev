@@ -1062,6 +1062,89 @@ s .btJob.active:before {
   font-size: 1.5rem;
 }
 
+.btVoltar,
+.btHelp {
+  position: absolute;
+  background: #557cd2;
+  color: #ffffff;
+  top: 100px;
+  right: 16px;
+}
+.btVoltar:before,
+.btHelp:before {
+  content: "Precisa de alguma ajuda?";
+  font-size: 0.8rem;
+  margin-right: 8px;
+}
+
+.btVoltar:before {
+  display: none;
+}
+.btVoltar:after {
+  content: "Voltar para Tarefa";
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+
+.feedContent .title {
+  margin-bottom: 24px;
+}
+.feedContent .title h4 {
+  font-weight: 600;
+  margin-bottom: 0;
+  color: #212121;
+}
+.feedContent .title span {
+  font-size: 0.8rem;
+  color: #557cd2;
+}
+.feedContent .panel {
+  padding: 1.5rem 1rem;
+  margin-bottom: 0.8rem;
+  background: #ffffff;
+  border: 1px solid #d6d7d9;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.feedContent .panel:last-child {
+  margin-bottom: 3.8rem;
+}
+.feedContent .panel .avatar img {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+.feedContent .panel .action {
+  text-align: right;
+}
+.feedContent .panel .block {
+  display: flex;
+  gap: 16px;
+}
+.feedContent .panel .block .user .name {
+  color: #557cd2;
+}
+.feedContent .panel .block .user .dateTime {
+  font-size: 0.7rem;
+  color: #5b616b;
+}
+.feedContent .panel .block .helpText {
+  color: #212121;
+  font-size: 0.8rem;
+  margin: 0.8rem 0 0 0;
+}
+.feedContent .panel .block .action {
+  text-align: left;
+  margin-top: 0.8rem;
+}
+.feedContent .panel .block .action .btn {
+  border-color: #ffffff;
+}
+
 .chat {
   position: absolute;
   bottom: 32px;

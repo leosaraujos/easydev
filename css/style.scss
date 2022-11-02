@@ -1160,6 +1160,104 @@ body {
     }
 }
 
+//Help / Voltar
+.btVoltar,    
+.btHelp {
+    position: absolute;
+    background: $blue-2;
+    color: $white;
+    top: 100px;
+    right: 16px;
+    &:before {
+        content: "Precisa de alguma ajuda?";
+        font-size: 0.8rem;
+        margin-right: 8px;    
+    }    
+}  
+.btVoltar {
+    &:before {
+        display: none;
+    }
+    &:after {
+        content: "Voltar para Tarefa";
+        font-size: 0.8rem;
+        margin-left: 8px;        
+    }    
+}
+
+//Feed
+.feedContent {
+    // @include shadow();
+    .title {
+        margin-bottom: 24px;
+        h4 {
+            font-weight: $bol;    
+            margin-bottom: 0;
+            color: $black;
+        }    
+        span {
+            font-size: 0.8rem;
+            color: $blue-2;
+        }    
+    }
+    .panel {
+        padding: 1.5rem 1.0rem;
+        margin-bottom: 0.8rem;
+        background: $white;
+        border: 1px solid $grey-3;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        &:last-child {
+            margin-bottom: 3.8rem;
+        }
+        .avatar {
+            
+            // display: flex;
+            
+            // justify-content: center;            
+            //@include border-radius(100px); 
+
+            img {
+                display: block;
+                width: 52px;
+                height: 52px;
+                @include border-radius(100px); 
+            }
+        }
+        .action {
+            text-align: right;               
+        }    
+        .block {
+            display: flex;    
+            gap: 16px;            
+            .media {}
+            .avatar {}
+            .user {
+                .name {
+                    color: $blue-2;    
+                }    
+                .dateTime {
+                    font-size: 0.7rem;
+                    color: $grey-2;
+                }
+            }
+            .helpText {
+                color: $black;
+                font-size: 0.8rem;
+                margin: 0.8rem 0 0 0; 
+            }
+            .action {
+                text-align: left;
+                margin-top: 0.8rem;
+                .btn {
+                    border-color: $white;
+                }                     
+            }
+        }
+    }
+}          
+
  //Chat 
 .chat {
     position: absolute;
