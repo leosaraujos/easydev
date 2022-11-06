@@ -1052,6 +1052,52 @@ s .btJob.active:before {
   font-size: 1.5rem;
 }
 
+.headWallet {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.headWallet .user,
+.headWallet .myWallet {
+  background-color: rgba(0, 86, 158, 0.1);
+  padding: 0.6rem 0.8rem;
+  display: table;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.headWallet .user i,
+.headWallet .myWallet i {
+  color: #557cd2;
+  font-size: 2.8rem;
+}
+.headWallet .user .d-flex,
+.headWallet .myWallet .d-flex {
+  align-items: center;
+  gap: 8px;
+}
+.headWallet .user .d-flex .name,
+.headWallet .user .d-flex .val,
+.headWallet .myWallet .d-flex .name,
+.headWallet .myWallet .d-flex .val {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.headWallet .user .d-flex .name:before,
+.headWallet .user .d-flex .val:before,
+.headWallet .myWallet .d-flex .name:before,
+.headWallet .myWallet .d-flex .val:before {
+  content: "Saldo";
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+.headWallet .user .d-flex .name:before,
+.headWallet .myWallet .d-flex .name:before {
+  content: "Usuário";
+}
+
 .btVoltar,
 .btHelp {
   position: absolute;

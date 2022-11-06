@@ -1160,6 +1160,45 @@ body {
     }
 }
 
+//Wallet
+.headWallet {
+    display: flex;
+    gap: 12px;
+    justify-content: space-between;
+    .user,    
+    .myWallet {
+        background-color: rgba($blue-5, 0.1);
+        padding: 0.6rem 0.8rem;
+        display: table;
+        @include border-radius(4px);
+        i {
+            color: $blue-2;
+            font-size: 2.8rem;
+        }
+        .d-flex {
+            align-items: center;
+            gap: 8px;    
+            .name,
+            .val {
+                font-weight: $bol;
+                font-size: 1.5rem;    
+                &:before {
+                    content: "Saldo";
+                    display: block;
+                    font-size: 0.8rem;    
+                    font-weight: $reg;
+                    margin-bottom: 0;
+                }
+            }
+            .name {
+                &:before {
+                    content: "Usuário";
+                }
+            }
+        }
+    }
+}        
+
 //Help / Voltar
 .btVoltar,    
 .btHelp {
