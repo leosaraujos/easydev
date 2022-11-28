@@ -15,31 +15,32 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />    
     <link rel="stylesheet" href="css/style.css" />    
   </head>
-  <body>
+  <body class="bg-dev">
     <main class="form-inicial w-100 m-auto">
       <form action="">
         <div class="text-center">
-          <img src="image/logo.jpeg" alt="easYDev" class="logo-login">
+          <img src="image/logo-easy-h-white.png" alt="easYDev" class="logo-login">
           <h1 class="h5 mb-0">FAÇA LOGIN NA SUA CONTA</h1>
           <p class="small">Aproveite nossa plataforma e comece a desenvolver agora mesmo!</p>
         </div>  
 
-        <hr>
-
-        <button class="w-100 mb-1 btn btn-md bt-style" type="button"><i class="fa-brands fa-google"></i> Entrar com Google</button>
-        <p class="small mb-1 text-center">ou</p>
-        <div class="form-floating">
-          <input type="email" class="form-control" id="userEmail" placeholder="E-mail">
-          <label for="userEmail">Email</label>          
+        <!-- <hr> -->
+        <div class="box_fosco">
+          <button class="w-100 mb-1 btn btn-md bt-style" type="button"><i class="fa-brands fa-google"></i> Entrar com Google</button>
+          <p class="small mb-1 text-center">ou</p>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="userEmail" placeholder="E-mail">
+            <label for="userEmail">Email</label>          
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="userPass" placeholder="Senha">
+            <label for="userPass">Senha</label>          
+            <i class="fa-regular showPass"></i>
+          </div>
+      
+          <a href="recuperar-senha.html" class="btn-link small">Esqueceu sua senha?</a>
+          <button class="w-100 mt-3 mb-3 btn btn-md bt-style" type="submit">Entrar</button>        
         </div>
-        <div class="form-floating">
-          <input type="password" class="form-control" id="userPass" placeholder="Senha">
-          <label for="userPass">Senha</label>          
-          <i class="fa-regular showPass"></i>
-        </div>
-    
-        <a href="recuperar-senha.html" class="btn-link small">Esqueceu sua senha?</a>
-        <button class="w-100 mt-3 mb-3 btn btn-md bt-style" type="submit">Entrar</button>        
 
         <p class="small text-center">Dev ainda sem cadastro?</p>
         <a href="cadastro.html" class="w-100 btn btn-md bt-outline" >Cadastre-se aqui!</a>        

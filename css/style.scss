@@ -22,6 +22,7 @@ $red-1:    #981b1e;
 $red-2:    #e31c3d;
 $purple:   #9a4ab7;
 $purple-2: #782c93;
+$purple-3: #1a0d8a;
 
 $bg-sucess:#e7f4e4;
 $bg-erro:  #f9dede; 
@@ -41,7 +42,17 @@ $bg-erro:  #f9dede;
     -webkit-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.23);
     -moz-box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.23);
     box-shadow: 0px 10px 8px 0px rgba(0,0,0,0.23);
-}    
+}   
+
+//Vidro Fosco
+@mixin fosco(){    
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );    
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    @include border-radius(10px);
+}     
     
 //Body 
 body {
@@ -178,12 +189,29 @@ body {
     &.aguardando {background:$grey-2}
 }
 
+//bg Dev
+.bg-dev {    
+    background: #0d1117;    
+    background: rgb(27,36,50);
+    background: linear-gradient(190deg, rgba(27,36,50,1) 49%, rgba(13,17,23,1) 100%);
+    background: #0d1117 url("../image/bg-login-2.png") top center;
+    background-repeat: repeat-x;
+    background-size:  auto 100%;
+    
+}
+//Box Login    
+.box_fosco {
+    padding: 1.2rem 0.8rem 0.2rem 0.8rem;
+    margin: 1.0rem 0 0.9rem;
+    @include fosco();
+}    
 
 //Login / Cadastro
 .icon-svg,
 .logo-login {
-    width: 140px;
+    //width: 140px;
     height: auto;    
+    margin: 0.4rem 0;
 }
 .icon-svg {
     display: block;
@@ -201,24 +229,40 @@ body {
     margin-bottom: 16px;
 }    
 .form-inicial {
-    color: $black;
+    // color: $black;
+    // color: $white;    
     max-width: 380px;
     padding: 15px;    
     hr {
-        border-color: $grey-2;
+        // border-color: $grey-2;
+        border-color: $white;
         }
     h1 {
-        font-weight: $bol;
+        font-weight: $lig;
+        color: $white;
+        margin-top: 0.8rem;
+        font-size: 0.9rem;
     }    
     .small {
-        color: $grey-2;
+        color: $white;
+        font-size: 0.6rem;
         &.sm-t {
             font-size: 0.7rem;    
-            color: $purple;
+            color: $white;
         }
     }
     .btn-link {
-        color: $blue-2;
+        color: $white;
+        font-size: 0.7rem;
+    }
+    .bt-outline {
+        color: $white;
+        border-color: $white;
+    }
+    
+    .text-muted {
+        font-size: 0.8rem;
+        color: $white !important;
     }
     .showPass {
         position: absolute;
@@ -304,13 +348,16 @@ body {
     gap: 24px;
     li {
         a {
-            color: $white;
-            @include border-radius (100px);
+            // color: $white;
+            color: $grey-1;
+            @include border-radius (6px);
             &:hover,
             &.active {
+                //color: $purple-3;
                 color: $white;
-                background: $blue-5;
-                border-color: $blue-5;
+                //background: $blue-5;
+                background: $purple;
+                border-color: $purple-2;
             }                    
         }
     }
@@ -327,7 +374,7 @@ body {
     }
     .nav-item {
         a {
-            color: $blue-2;
+            color: $grey-2;
             &.active,
             &:hover {
                 color: $purple;
@@ -407,6 +454,11 @@ body {
         text-align: center;
         font-size: 0.7rem;
         color: $white;
+        font-size: 0;
+        img {
+            display: none;    
+        }
+        min-height: 90px;
     }
     .asideNav {
         display: flex;
@@ -415,8 +467,14 @@ body {
         justify-content: space-between;
         text-align: center;
         width: 80px;        
-        padding: 0.5rem;      
-        background-color: rgba($blue-2, 1);        
+        padding: 0.5rem;              
+        // background-color: rgba($blue-2, 1);                
+        
+        background: rgba( 14, 46, 134, 0.25 );
+        box-shadow: 0 8px 16px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
     .content-center {
         padding: 0.5rem 0.8rem;
@@ -448,9 +506,19 @@ body {
 .cardJob {
     width: 17rem;
     padding-bottom: 40px;
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+        @include shadow();    
+    }
     a {
         text-decoration: none;
         color: $black;
+        &.l_job {
+            // background: red; 
+            max-height: 232px;  
+            overflow: hidden;
+        }                
         &:hover {
             color: $blue-2;
             .titleJob {
@@ -499,7 +567,7 @@ body {
             text-overflow: ellipsis;            
         }
     } 
-    .navAdm {
+    .navAdm {        
         width: 100%;
         position: absolute;
         z-index: 4;
@@ -508,7 +576,7 @@ body {
         border-top: 1px solid $grey-3;
         display: flex;
         align-items: center;        
-        justify-content: space-around;
+        justify-content: space-around;        
     }  
 }    
 
