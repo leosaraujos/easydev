@@ -160,6 +160,9 @@ body {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
 }
+.box_fosco svg {
+  fill: #ffffff;
+}
 
 .icon-svg,
 .logo-login {
@@ -168,9 +171,10 @@ body {
 }
 
 .icon-svg {
+  width: 140px;
+  height: auto;
   display: block;
-  margin: 0 auto;
-  fill: #9a4ab7;
+  margin: 1rem auto 0 auto;
 }
 
 .checkbox {
@@ -1429,6 +1433,7 @@ s .btJob.active:before {
   .jobOpen .thumbJob,
 .taskOpen .thumbJob {
     height: 280px;
+    margin-top: 1.5rem;
   }
   .jobOpen .thumbJob img,
 .taskOpen .thumbJob img {
@@ -1452,5 +1457,16 @@ s .btJob.active:before {
   }
   .title-section.filter .filterAll form #usertask {
     min-width: auto;
+  }
+  .btVoltar,
+.btHelp {
+    top: 91px;
+  }
+  .btVoltar:before,
+.btHelp:before {
+    content: "Precisa de ajuda?";
+  }
+  .btVoltar:after {
+    content: "Voltar";
   }
 }/*# sourceMappingURL=style.css.map */

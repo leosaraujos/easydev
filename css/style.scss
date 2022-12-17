@@ -203,7 +203,10 @@ body {
 .box_fosco {
     padding: 1.2rem 0.8rem 0.2rem 0.8rem;
     margin: 1.0rem 0 0.9rem;
-    @include fosco();
+    @include fosco();      
+    svg {
+        fill: $white;
+    }  
 }    
 
 //Login / Cadastro
@@ -214,9 +217,10 @@ body {
     margin: 0.4rem 0;
 }
 .icon-svg {
+    width: 140px;
+    height: auto;    
     display: block;
-    margin: 0 auto;
-    fill: $purple;
+    margin: 1.0rem auto 0 auto;     
 }
 .checkbox {
     font-size: 0.8rem;
@@ -1598,6 +1602,7 @@ body {
     .taskOpen {
         .thumbJob {
             height: 280px;
+            margin-top: 1.5rem;
             img {
                 widows: auto;
                 height: 100%;
@@ -1622,6 +1627,18 @@ body {
                     }
                 }    
             }
+        }    
+    }
+    .btVoltar,    
+    .btHelp {
+        top: 91px;
+        &:before {
+            content: "Precisa de ajuda?";            
+        }    
+    }  
+    .btVoltar {
+        &:after {
+            content: "Voltar";                
         }    
     }
 }
