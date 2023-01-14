@@ -28,9 +28,12 @@
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                    
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html" title="cursos disponíveis">Cursos Disponíveis</a>
+                            <a class="nav-link" href="javascript:void(0)" title="Quem Somos">Quem Somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="javascript:void(0)" title="Webnário">Webnário</a>
                         </li>
                         <li class="nav-item">
                             <a class="btn btn-client" href="#" role="button" title="inscreva-se">Inscreva-se</a>
@@ -42,153 +45,144 @@
         <div class="jumbotron">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-sm">
+                    <div class="col">
                         <h1 class="display-4">Deseja estudar<br>tecnologia quando<br>e onde quiser?</h1>
                         <p class="lead">Chegou a oportunidade que você esperava! </p>     
                         <p><span>Aprenda Desenvolvimento Web</span>
                         Curso GRATUITO!</br> Comece já a desenvolver seu próprio site.</p>                        
                     </div>
-                    <div class="col-sm">
+                    <div class="col">
                         <div id="resposta"></div>
                         <div class="form-inscricao">
-                            <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h2>Inscreva-se preenchendo o formulário abaixo.</h2>
+                            <form action="">
+                                <div class="row mt-3">
+                                    <div class="col-sm-12 col-md-12">
+                                        <h2>Inscreva-se para o webnario do dia 10 de Março preenchendo o formulário abaixo.</h2>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-9">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo">
-                                            <div class="help-block with-errors"></div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="username" placeholder="Nome">
+                                            <label for="username">Nome</label>            
                                         </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="idade" id="idade" placeholder="idade">
-                                            <div class="help-block with-errors"></div>
-                                        </div>    
-                                    </div>
+                                    </div>                                    
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="usermail" placeholder="E-mail">
+                                            <label for="usermail">E-mail</label>            
+                                        </div>
+                                    </div>                                    
                                 </div>                                  
+
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail">
-                                            <div class="help-block with-errors"></div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="genero" aria-label="Selecione seu Gênero">
+                                                <option selected>Selecione</option>
+                                                <option value="gg">01</option>
+                                                <option value="gg">02</option>
+                                                <option value="gg">03</option>
+                                              </select>
+                                              <label for="genero">Gênero</label>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <select class="form-control mb-3" neme="genero" id="genero">
-                                            <option value="null">Gênero</option>
-                                            <option value="1">1</option>
-                                            <option value="1">1</option>
-                                            <option value="1">1</option>                                            
-                                        </select>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <select class="form-control" neme="raca_cor" id="raca_cor">
-                                                <option value="null">Raça/Cor</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>                                            
-                                            </select>
-                                            <div class="help-block with-errors"></div>
-                                        </div>    
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6 mb-3">
-                                        <input type="text" class="form-control" name="tel" id="tel" placeholder="Telefone">
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF">
-                                            <div class="help-block with-errors"></div>
-                                        </div>    
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <select class="form-control" neme="uf" id="uf">
-                                                <option value="null">UF</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>                                            
-                                            </select>
-                                            <div class="help-block with-errors"></div>
+                                    </div>                                    
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="raca" aria-label="Selecione sua Raça">
+                                                <option selected>Selecione</option>
+                                                <option value="rc">01</option>
+                                                <option value="rc">02</option>
+                                                <option value="rc">03</option>
+                                              </select>
+                                              <label for="raca">Raça</label>            
                                         </div>
-                                    </div>
-                                    <div class="col-lg-9">
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
-                                            <div class="help-block with-errors"></div>
-                                        </div>    
-                                    </div>
-                                </div>
+                                    </div>                                    
+                                </div>                                  
+                                
                                 <div class="row">
-                                    <div class="col-lg-6 mb-3">
-                                        <select class="form-control" neme="escolaridade" id="escolaridade">
-                                            <option value="null">Escolaridade</option>
-                                            <option value="1">1</option>
-                                            <option value="1">1</option>
-                                            <option value="1">1</option>                                            
-                                        </select>
-                                        <div class="help-block with-errors"></div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <select class="form-control" neme="area" id="area">
-                                                <option value="null">Área</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>                                            
-                                            </select>
-                                            <div class="help-block with-errors"></div>
-                                        </div>    
-                                    </div>
-                                </div>
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="tel" class="form-control" id="phone" placeholder="Telefone">
+                                            <label for="phone">Telefone</label>            
+                                        </div>
+                                    </div>                                    
+                                
+                                    <div class="col-sm-12 col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                                            <label for="cpf">CPF</label>            
+                                        </div>
+                                    </div>                                    
+                                </div>                              
+                                
                                 <div class="row">
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <select class="form-control" neme="curso" id="curso">
-                                                <option value="null">Curso</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>
-                                                <option value="1">1</option>                                            
-                                            </select>
-                                            <div class="help-block with-errors"></div>
-                                        </div>    
-                                    </div>
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="especialidade" aria-label="Selecione sua Especialidade">
+                                                <option selected>Selecione</option>
+                                                <option value="rc">Fullstack</option>
+                                                <option value="rc">Back-End</option>
+                                                <option value="rc">Fron-End</option>
+                                              </select>
+                                              <label for="especialidade">Especialidade</label>
+                                        </div>
+                                    </div>                 
                                 </div>
+
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12 col-md-3">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="uf" aria-label="UF">
+                                                <option selected>UF</option>
+                                                <option value="rc">PE</option>
+                                                <option value="rc">SP</option>
+                                                <option value="rc">RJ</option>
+                                              </select>
+                                              <label for="uf">UF</label>
+                                        </div>
+                                    </div>                             
+                                    <div class="col-sm-12 col-md-9">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                                            <label for="cidade">Cidade</label>            
+                                        </div>
+                                    </div>                             
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="escolaridade" aria-label="Selecione sua Escolaridade">
+                                                <option selected>Selecione</option>
+                                                <option value="rc">Mestre</option>
+                                                <option value="rc">Sabe Nada</option>
+                                                <option value="rc">Sabe Tudo</option>
+                                              </select>
+                                              <label for="escolaridade">Escolaridade</label>         
+                                        </div>
+                                    </div>                                                                 
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-12 mb-3">
                                         <div class="form-group form-check">
                                             <input type="checkbox" class="form-check-input" id="termos_uso">
                                             <label class="form-check-label" for="termos_uso">Aceito os Termos e Condições</label>
                                             <div class="help-block with-errors"></div>
                                         </div>
-                                        <div class="form-group form-check">
-                                            <input type="checkbox" class="form-check-input" id="p_privacidade">
-                                            <label class="form-check-label" for="p_privacidade">Aceito a Política de Privacidade</label>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
                                     </div>
-                                </div>
+                                </div>                                    
                                 <div class="row">
-                                    <div class="col-12 action">
+                                    <div class="col-sm-12 col-md-12 action">
                                         <button type="submit" id="submit" class="btn btn-client bt-send">Fazer Inscrição</button>
                                     </div>
                                 </div>
 
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-sm-12 col-md-12">
                                         <div id="msgSubmit" class="hidden"></div> 
                                     </div>
                                 </div>
