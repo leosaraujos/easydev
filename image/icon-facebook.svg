@@ -1,0 +1,10 @@
+<svg id="logo-2" data-name="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="logo" width="40" height="40" fill="#0a0a0a"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_1" data-name="Grupo de máscara 1" clip-path="url(#clip-path)">
+    <path id="facebook" d="M26.662,6.642h3.652V.282A47.153,47.153,0,0,0,24.993,0c-5.265,0-8.872,3.312-8.872,9.4V15h-5.81v7.11h5.81V40h7.123V22.112H28.82L29.7,15H23.243V10.1c0-2.055.555-3.462,3.418-3.462Z" transform="translate(-0.313)" fill="#0a0a0a"/>
+  </g>
+</svg>

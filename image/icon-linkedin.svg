@@ -1,0 +1,14 @@
+<svg id="logo-2" data-name="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="logo" width="40" height="40" fill="#0a0a0a"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_4" data-name="Grupo de máscara 4" clip-path="url(#clip-path)">
+    <g id="linkedin_1_" data-name="linkedin (1)">
+      <path id="Caminho_6" data-name="Caminho 6" d="M39.99,40v0H40V25.328c0-7.177-1.545-12.7-9.935-12.7a8.71,8.71,0,0,0-7.845,4.312H22.1V13.293H14.148V40h8.283V26.775c0-3.482.66-6.848,4.972-6.848,4.248,0,4.312,3.973,4.312,7.072V40Z" fill="#0a0a0a"/>
+      <path id="Caminho_7" data-name="Caminho 7" d="M.66,13.295H8.953V40H.66Z" fill="#0a0a0a"/>
+      <path id="Caminho_8" data-name="Caminho 8" d="M4.8,0a4.826,4.826,0,1,0,4.8,4.8A4.8,4.8,0,0,0,4.8,0Z" fill="#0a0a0a"/>
+    </g>
+  </g>
+</svg>

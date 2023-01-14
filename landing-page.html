@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="image/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon-16x16.png">
+    <link rel="manifest" href="image/site.webmanifest">
+    <link rel="mask-icon" href="image/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <title>easYDev - Desenvolvimento sem Burocracia</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style-landing.css">
+    <link rel="stylesheet" href="css/style.css">    
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-client h-curso">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="image/logo-easy-h-white.png" alt="logo easy" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" title="cursos disponíveis">Cursos Disponíveis</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-client" href="#" role="button" title="inscreva-se">Inscreva-se</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm">
+                        <h1 class="display-4">Deseja estudar<br>tecnologia quando<br>e onde quiser?</h1>
+                        <p class="lead">Chegou a oportunidade que você esperava! </p>     
+                        <p><span>Aprenda Desenvolvimento Web</span>
+                        Curso GRATUITO!</br> Comece já a desenvolver seu próprio site.</p>                        
+                    </div>
+                    <div class="col-sm">
+                        <div id="resposta"></div>
+                        <div class="form-inscricao">
+                            <form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2>Inscreva-se preenchendo o formulário abaixo.</h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome completo">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="idade" id="idade" placeholder="idade">
+                                            <div class="help-block with-errors"></div>
+                                        </div>    
+                                    </div>
+                                </div>                                  
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" id="email" placeholder="Seu e-mail">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <select class="form-control mb-3" neme="genero" id="genero">
+                                            <option value="null">Gênero</option>
+                                            <option value="1">1</option>
+                                            <option value="1">1</option>
+                                            <option value="1">1</option>                                            
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <select class="form-control" neme="raca_cor" id="raca_cor">
+                                                <option value="null">Raça/Cor</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>                                            
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <input type="text" class="form-control" name="tel" id="tel" placeholder="Telefone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="cpf" id="cpf" placeholder="CPF">
+                                            <div class="help-block with-errors"></div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="form-group">
+                                            <select class="form-control" neme="uf" id="uf">
+                                                <option value="null">UF</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>                                            
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-9">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="cidade" id="cidade" placeholder="Cidade">
+                                            <div class="help-block with-errors"></div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-3">
+                                        <select class="form-control" neme="escolaridade" id="escolaridade">
+                                            <option value="null">Escolaridade</option>
+                                            <option value="1">1</option>
+                                            <option value="1">1</option>
+                                            <option value="1">1</option>                                            
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <select class="form-control" neme="area" id="area">
+                                                <option value="null">Área</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>                                            
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <select class="form-control" neme="curso" id="curso">
+                                                <option value="null">Curso</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>
+                                                <option value="1">1</option>                                            
+                                            </select>
+                                            <div class="help-block with-errors"></div>
+                                        </div>    
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="termos_uso">
+                                            <label class="form-check-label" for="termos_uso">Aceito os Termos e Condições</label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                        <div class="form-group form-check">
+                                            <input type="checkbox" class="form-check-input" id="p_privacidade">
+                                            <label class="form-check-label" for="p_privacidade">Aceito a Política de Privacidade</label>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 action">
+                                        <button type="submit" id="submit" class="btn btn-client bt-send">Fazer Inscrição</button>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div id="msgSubmit" class="hidden"></div> 
+                                    </div>
+                                </div>
+                            </form>
+                        </div>                        
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+
+    <section class="curso-intern">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm">
+                    <img src="image/img-curso-01@2x.png" alt="curso-01" class="img-fluid">
+                </div>
+                <div class="col-sm">
+                    <h1>Bolsas integrais<br>SoulCode Academy</h1>
+                    <p class="sub-t">Aprenda HTML, CSS e JavaScript</p>
+                    <div class="list-soul">
+                        <ul>
+                            <li>350 bolsas integrais disponíveis</li>
+                            <li>120 horas de conteúdo disponibilizado em 3 módulos</li>
+                            <li>100% online, com aulas gravadas</li>
+                            <li>Estude 2 horas por dia (recomendar)</li>
+                            <li>Com certificado de horas</li>
+                        </ul>
+                        <a class="btn btn-client lg" href="curso.html" role="button" title="Inscreva-se">Inscreva-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>   
+
+    <section class="modulos">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>O que você vai aprender no curso?</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 mb-5">
+                    <div class="modulo h-mod">
+                        <div class="title-mod">Módulo 1</div>
+                        <div class="intro-mod">Introdução ao HTML, CSS3 e JavaScript</div>
+                        <div class="list-soul">
+                            <ul>
+                                <li>Aprenda a escrever "páginas web" usando a linguagem HTML5 e CSS3;</li>
+                                <li>Utilizar os principais recursos da linguagem para criar páginas com elementos diversos (textos, imagens, links, listas, tabelas, formulários, etc.);</li>
+                                <li>Desenvolver páginas simples, porém estilizadas;</li>
+                                <li>Compreender o funcionamento da Linguagem Javascript;</li>
+                                <li>Resolver problemas lógicos com construção de algoritmos básicos na linguagem Javascript.</li>
+                            </ul>                            
+                        </div>
+                    </div>
+                    <span class="date">Disponível</span>                    
+                </div>
+
+                <div class="col-sm-12 col-md-4 mb-5">
+                    <div class="modulo h-mod">
+                        <div class="title-mod">Módulo 2</div>
+                        <div class="intro-mod">CSS3 avançado e JavaScript intermediário</div>
+                        <div class="list-soul">
+                            <ul>
+                                <li>Aprenda a construir páginas web utilizando os diversos recursos de CSS disponíveis;</li>  
+                                <li>Aplicar efeitos visuais utilizando o CSS3; </li>  
+                                <li>Construir layouts responsivos com flexbox e grids em CSS3; </li>  
+                                <li>Criar aplicações em JavaScript com paradigmas de Programação Funcional e Orientada a Objetos;</li>   
+                                <li>Manipular os elementos da página web via DOM e realizar operações como validação de dados no lado cliente.</li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <span class="date">Disponível em breve</span>
+                </div>
+
+                <div class="col-sm-12 col-md-4 mb-5">
+                    <div class="modulo h-mod">
+                        <div class="title-mod">Módulo 3</div>
+                        <div class="intro-mod text-center">Informações em breve</div>
+                        <div class="list-soul">
+                            <ul>
+                                <li>Aprenda a construir páginas web e mobile de forma ágil, moderna e responsiva, utilizando o framework Bootstrap;</li>
+                                <li>Construir aplicações utilizando operações assíncronas com promisses;</li>
+                                <li>Compreender o funcionamento das APIs e utilizá-las em seus projetos;</li>
+                                <li>Desenvolver aplicação com Node, Express, MongoDB e MySQL;</li>
+                                <li>Introdução ao React.js.</li>
+                            </ul>  
+                        </div>
+                    </div>
+                    <span class="date">Disponível em breve</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="requisitos">
+        <div class="container">
+            <div class="row align-items-center rev-img">
+                <div class="col-sm">
+                    <h1>Requisitos</h1>
+                    <div class="list-soul">
+                        <ul>
+                            <li>Ter 16 anos ou mais;</li>
+                            <li>Realizar o processo de inscrição;</li>
+                            <li>Possuir um computador ou notebook com acesso à internet;</li>
+                            <li>Concordar com os Termos e Condições;</li>
+                            <li>Concordar com a Política de Privacidade.</li>
+                            <li class="bulet-2">Não é necessária nenhuma formação prévia ou experiência anterior em programação.</li>
+                            <li class="bulet-2">É recomendada uma dedicação mínima de 2 horas por dia ao curso.</li>
+                            <li class="bulet-2">Este curso foi desenvolvido para um aprendizado totalmente independente.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm mb-4">
+                    <img src="image/img-requisito.png" alt="..." class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>  
+    
+    
+    <section class="cta-externo">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 m-auto">
+                    <h1>Bolsas limitadas!</h1>
+                    <p>Não deixe essa grande oportunidade passar.</p>
+                    <a class="btn btn-client" href="#" role="button" title="Inscreva-se">Inscreva-se agora.</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <div class="logo-footer">
+                        <img src="image/logo-footer@2x.png" alt="logo soulcode academy" class="img-fluid">
+                    </div>
+                    <div class="nav-social">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="image/icon-facebook.svg" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="image/icon-instagram.svg" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="image/icon-twitter.svg" alt="twitter">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank">
+                                        <img src="image/icon-linkedin.svg" alt="linkedin">
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav-footer">
+                        <nav>
+                            <ul>
+                                <li><a href="" target="_blank" title="Sobre nós">Sobre Nós</a></li>
+                                <li><a href="" target="_blank" title="Cursos">Cursos</a></li>
+                                <li><a href="" target="_blank" title="Contato">Contato</a></li>
+                            </ul>
+                        </nav>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copy">
+            <div class="row">
+                <div class="col-sm text-center">
+                    <p>Copyright SoulCode Academy 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/22716c812b.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>

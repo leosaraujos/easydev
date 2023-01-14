@@ -1,0 +1,508 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap);
+.btn-client {
+  background-color: #FFC200;
+  color: #0a0a0a;
+  -webkit-box-shadow: 0 5px 6px -6px #777;
+  -moz-box-shadow: 0 5px 6px -6px #777;
+  box-shadow: 0 5px 6px -6px #777;
+  transition: all 0.3s;
+}
+.btn-client:hover {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+.btn-client.lg {
+  font-size: 1.4rem;
+  padding: 0.5rem 2rem;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-weight: 700 !important;
+}
+
+.no-form {
+  padding: 140px 0 100px;
+}
+
+header .bg-client {
+  background-color: #3592ab !important;
+}
+header .bg-client .navbar-nav .nav-item {
+  margin: auto 24px;
+}
+header .bg-client .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  transition: all 0.3s;
+}
+header .bg-client .navbar-nav .nav-item .nav-link:hover {
+  text-decoration: underline;
+}
+header .bg-client .navbar-nav .nav-item:nth-child(2) {
+  margin-right: 0;
+}
+header .bg-client.h-curso {
+  position: fixed;
+  width: 100%;
+  background: url("../image/background-depoimentos-rede@2x.png"), #3592ab;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 999;
+}
+
+#carousel-client .carousel-caption {
+  right: 5%;
+  left: 5%;
+  text-align: left;
+}
+#carousel-client .carousel-caption h1 {
+  margin-top: 120px;
+}
+#carousel-client .carousel-caption p {
+  color: #0a0a0a;
+  font-weight: 400;
+}
+#carousel-client .carousel-caption p.lead {
+  font-weight: 700;
+}
+
+.jumbotron {
+  margin-bottom: 100px;
+  background: url("../image/background-depoimentos-rede@2x.png"), #3592ab;
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+.jumbotron h1 {
+  color: #ffffff;
+}
+.jumbotron p {
+  color: #ffffff;
+}
+.jumbotron p.lead {
+  color: #FFC200;
+  font-weight: 700;
+}
+.jumbotron p span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.jumbotron img {
+  margin-top: 40px;
+  height: 440px;
+  width: auto;
+}
+.jumbotron .form-inscricao {
+  background: #e7f7f8;
+  max-width: 420px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  -webkit-box-shadow: 7px 7px 11px 0px rgba(50, 50, 50, 0.49);
+  -moz-box-shadow: 7px 7px 11px 0px rgba(50, 50, 50, 0.49);
+  box-shadow: 7px 7px 11px 0px rgba(50, 50, 50, 0.49);
+}
+.jumbotron .form-inscricao h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+}
+.jumbotron .form-inscricao .form-check-label {
+  font-size: 0.8rem;
+  color: #3592ab;
+}
+.jumbotron .form-inscricao .action {
+  text-align: right;
+}
+
+#resposta {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#msgSubmit {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.help-block.with-errors {
+  font-size: 0.7rem;
+  color: red;
+}
+
+.text-success {
+  background: #c4ffde;
+  border: 1px solid #0dab31;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.text-danger {
+  background: #ffc4c4;
+  border: 1px solid #d21e2f;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.cta-externo {
+  text-align: center;
+  margin: 5rem 0;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #ffffff;
+  background: url("../image/cta-externo.jpg"), #3592ab;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cta-externo h1 {
+  font-size: 1.8rem;
+}
+
+.confirmacao .icon {
+  max-width: 160px;
+  height: auto;
+  margin: 1.5rem auto;
+}
+.confirmacao .headconf {
+  max-width: 450px;
+  margin: 1.5rem auto 1.5rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.confirmacao .card {
+  max-width: 450px;
+  padding: 1rem;
+  border-color: #3592ab;
+  margin: 0 auto 1.5rem;
+}
+.confirmacao .dest-conf {
+  background-color: rgba(53, 146, 171, 0.2);
+  border: 1px solid #3592ab;
+  padding: 0.5rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+.depoimentos {
+  padding: 5rem 0 2rem;
+  margin: 5rem 0;
+  background: url("../image/background-depoimentos-rede@2x.png"), #3592ab;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.depoimentos h1 {
+  color: #ffffff;
+}
+.depoimentos p {
+  color: #ffffff;
+}
+.depoimentos .carousel-inner .carousel-item {
+  text-align: center;
+}
+.depoimentos .carousel-inner .carousel-item img {
+  margin: 1.5rem auto;
+}
+.depoimentos .carousel-inner .carousel-item .carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.depoimentos .carousel-inner .carousel-item .carousel-caption h5 {
+  font-weight: 700;
+  color: #FFC200;
+}
+.depoimentos .carousel-inner .carousel-item .carousel-caption p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.depoimentos .carousel-inner .carousel-item .carousel-caption p.curso-turma {
+  color: #0a0a0a;
+  font-weight: 700;
+}
+
+.cursos .curso {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.cursos .curso .img-curso {
+  margin: 1.5rem;
+}
+.cursos .sub-t,
+.cursos .desc-curso-cta {
+  color: #3592ab;
+}
+
+.curso-intern {
+  margin: 5rem 0;
+}
+.curso-intern p.sub-t {
+  color: #3592ab;
+  font-size: 1.5rem;
+}
+
+.modulos {
+  margin: 5rem 0;
+}
+.modulos h1 {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+}
+.modulos .modulo {
+  background: #e7f7f8;
+  padding: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.modulos .modulo.h-mod {
+  min-height: 480px;
+}
+.modulos .modulo .title-mod {
+  background: #0a0a0a;
+  color: #ffffff;
+  display: table;
+  padding: 0.8rem 1.8rem;
+  margin: -40px auto 1rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.modulos .modulo .intro-mod {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3592ab;
+}
+.modulos .modulo .list-soul li {
+  font-size: 0.9rem;
+}
+.modulos .date {
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.parceiros {
+  margin: 5rem 0;
+}
+.parceiros h1 {
+  margin-bottom: 2.5rem;
+}
+.parceiros .grid-parceiros {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 10px;
+  align-items: center;
+}
+
+.list-soul ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.list-soul ul li {
+  position: relative;
+  display: block;
+  margin: 1rem 0;
+  padding-left: 1.4rem;
+}
+.list-soul ul li:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  left: -0.1rem;
+  top: 0.4rem;
+  background: url("../image/icon-check.svg");
+  background-size: 0.9rem auto;
+  background-repeat: no-repeat;
+}
+.list-soul ul li.bulet-2:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  left: -0.1rem;
+  top: 0.4rem;
+  background: url("../image/next.svg");
+  background-size: 0.9rem auto;
+  background-repeat: no-repeat;
+}
+
+footer .logo-footer {
+  text-align: center;
+  margin: 0 auto;
+}
+footer .nav-conf ul,
+footer .nav-social ul,
+footer .nav-footer ul {
+  list-style: none;
+  display: block;
+  width: 100%;
+  margin: 2rem auto 1rem;
+  padding: 0;
+}
+footer .nav-conf ul:before,
+footer .nav-social ul:before,
+footer .nav-footer ul:before {
+  content: "Nossas redes sociais";
+  width: 100%;
+  display: block;
+  font-size: 0.75rem;
+}
+footer .nav-conf ul li,
+footer .nav-social ul li,
+footer .nav-footer ul li {
+  width: 32px;
+  text-align: center;
+  display: inline-block;
+  margin: 0.5rem;
+}
+footer .nav-conf ul li img,
+footer .nav-social ul li img,
+footer .nav-footer ul li img {
+  height: 24px;
+  width: auto;
+}
+footer .nav-conf ul:before {
+  display: none;
+}
+footer .nav-footer ul {
+  margin: 0 auto;
+}
+footer .nav-footer ul:before {
+  display: none;
+}
+footer .nav-footer ul li {
+  width: auto;
+  padding: 0 1.5rem;
+}
+footer .nav-footer ul li a {
+  color: #0a0a0a;
+  font-size: 0.8rem;
+  transition: all 0.3s;
+}
+footer .nav-footer ul li a:hover {
+  text-decoration: underline;
+  color: #3592ab;
+}
+footer .copy {
+  background: #3592ab;
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+footer .copy p {
+  margin: 0;
+  padding: 0.8rem 0;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 767px) {
+  .navbar-brand img {
+    max-width: 180px;
+    height: auto;
+  }
+
+  .navbar-collapse .navbar-nav {
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+  .navbar-collapse .navbar-nav .nav-item {
+    margin: 6px 0 !important;
+  }
+
+  .jumbotron h1 {
+    font-size: 2rem;
+    margin-top: 40px;
+  }
+  .jumbotron img {
+    height: auto;
+    width: 220px;
+  }
+  .jumbotron .form-inscricao {
+    max-width: 420px;
+    margin: 1rem auto;
+    padding: 1.5rem;
+  }
+  .jumbotron .form-inscricao h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .jumbotron .form-inscricao .form-check-label {
+    font-size: 0.8rem;
+  }
+  .jumbotron .form-inscricao .action {
+    text-align: center;
+  }
+  .jumbotron .form-inscricao .action button {
+    width: 100%;
+  }
+
+  #carousel-client .carousel-inner .carousel-item {
+    min-height: auto;
+    display: block;
+  }
+  #carousel-client .carousel-inner .carousel-item .carousel-caption {
+    top: 10%;
+    right: 3%;
+    left: 3%;
+    text-align: center;
+  }
+  #carousel-client .carousel-inner .carousel-item .carousel-caption h1 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+  #carousel-client .carousel-inner .carousel-item .carousel-caption p {
+    font-size: 0.75rem;
+  }
+  #carousel-client .carousel-inner .carousel-item .carousel-caption p.lead {
+    font-size: 0.8rem;
+  }
+  #carousel-client .carousel-inner .carousel-item .carousel-caption img {
+    width: auto;
+    height: 230px;
+  }
+
+  .rev-img {
+    flex-direction: column-reverse;
+  }
+
+  .cta-externo h1 {
+    font-size: 1.2rem;
+  }
+
+  .cursos .curso {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .cursos .curso .img-curso {
+    max-width: 80%;
+    height: auto;
+    margin: 0.5rem 1.5rem 1rem;
+  }
+  .cursos .curso:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .cursos .curso h1 {
+    font-size: 1.5rem;
+  }
+
+  .curso-intern h1,
+.soulon h1,
+.depoimentos h1,
+.cursos h1,
+.parceiros h1 {
+    font-size: 1.8rem;
+  }
+}
