@@ -14,7 +14,7 @@ body {
   border-color: #557cd2;
   color: #ffffff;
 }
-.btn.bt-style:hover {
+.btn.bt-style.active, .btn.bt-style:hover {
   background-color: #9a4ab7;
   border-color: #9a4ab7;
 }
@@ -1121,6 +1121,9 @@ s .btJob.active:before {
   gap: 12px;
   justify-content: space-between;
 }
+.headWallet .myfatu,
+.headWallet .myProj_atv,
+.headWallet .myProj,
 .headWallet .user,
 .headWallet .myWallet {
   background-color: rgba(0, 86, 158, 0.1);
@@ -1130,36 +1133,137 @@ s .btJob.active:before {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
 }
+.headWallet .myfatu i,
+.headWallet .myProj_atv i,
+.headWallet .myProj i,
 .headWallet .user i,
 .headWallet .myWallet i {
   color: #557cd2;
-  font-size: 2.8rem;
+  font-size: 1.4rem;
 }
+.headWallet .myfatu .d-flex,
+.headWallet .myProj_atv .d-flex,
+.headWallet .myProj .d-flex,
 .headWallet .user .d-flex,
 .headWallet .myWallet .d-flex {
   align-items: center;
   gap: 8px;
+  flex-direction: column;
+  text-align: center;
 }
+.headWallet .myfatu .d-flex .val_pro_atv,
+.headWallet .myfatu .d-flex .val_pro,
+.headWallet .myfatu .d-flex .val_fatu,
+.headWallet .myfatu .d-flex .name,
+.headWallet .myfatu .d-flex .val,
+.headWallet .myProj_atv .d-flex .val_pro_atv,
+.headWallet .myProj_atv .d-flex .val_pro,
+.headWallet .myProj_atv .d-flex .val_fatu,
+.headWallet .myProj_atv .d-flex .name,
+.headWallet .myProj_atv .d-flex .val,
+.headWallet .myProj .d-flex .val_pro_atv,
+.headWallet .myProj .d-flex .val_pro,
+.headWallet .myProj .d-flex .val_fatu,
+.headWallet .myProj .d-flex .name,
+.headWallet .myProj .d-flex .val,
+.headWallet .user .d-flex .val_pro_atv,
+.headWallet .user .d-flex .val_pro,
+.headWallet .user .d-flex .val_fatu,
 .headWallet .user .d-flex .name,
 .headWallet .user .d-flex .val,
+.headWallet .myWallet .d-flex .val_pro_atv,
+.headWallet .myWallet .d-flex .val_pro,
+.headWallet .myWallet .d-flex .val_fatu,
 .headWallet .myWallet .d-flex .name,
 .headWallet .myWallet .d-flex .val {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
+.headWallet .myfatu .d-flex .val_pro_atv:before,
+.headWallet .myfatu .d-flex .val_pro:before,
+.headWallet .myfatu .d-flex .val_fatu:before,
+.headWallet .myfatu .d-flex .name:before,
+.headWallet .myfatu .d-flex .val:before,
+.headWallet .myProj_atv .d-flex .val_pro_atv:before,
+.headWallet .myProj_atv .d-flex .val_pro:before,
+.headWallet .myProj_atv .d-flex .val_fatu:before,
+.headWallet .myProj_atv .d-flex .name:before,
+.headWallet .myProj_atv .d-flex .val:before,
+.headWallet .myProj .d-flex .val_pro_atv:before,
+.headWallet .myProj .d-flex .val_pro:before,
+.headWallet .myProj .d-flex .val_fatu:before,
+.headWallet .myProj .d-flex .name:before,
+.headWallet .myProj .d-flex .val:before,
+.headWallet .user .d-flex .val_pro_atv:before,
+.headWallet .user .d-flex .val_pro:before,
+.headWallet .user .d-flex .val_fatu:before,
 .headWallet .user .d-flex .name:before,
 .headWallet .user .d-flex .val:before,
+.headWallet .myWallet .d-flex .val_pro_atv:before,
+.headWallet .myWallet .d-flex .val_pro:before,
+.headWallet .myWallet .d-flex .val_fatu:before,
 .headWallet .myWallet .d-flex .name:before,
 .headWallet .myWallet .d-flex .val:before {
-  content: "Saldo";
+  content: "Saldo Disponível";
   display: block;
   font-size: 0.8rem;
   font-weight: 400;
   margin-bottom: 0;
 }
+.headWallet .myfatu .d-flex .name:before,
+.headWallet .myProj_atv .d-flex .name:before,
+.headWallet .myProj .d-flex .name:before,
 .headWallet .user .d-flex .name:before,
 .headWallet .myWallet .d-flex .name:before {
   content: "Usuário";
+}
+.headWallet .myfatu .d-flex .val_fatu:before,
+.headWallet .myProj_atv .d-flex .val_fatu:before,
+.headWallet .myProj .d-flex .val_fatu:before,
+.headWallet .user .d-flex .val_fatu:before,
+.headWallet .myWallet .d-flex .val_fatu:before {
+  content: "Faturamento";
+}
+.headWallet .myfatu .d-flex .val_pro:before,
+.headWallet .myProj_atv .d-flex .val_pro:before,
+.headWallet .myProj .d-flex .val_pro:before,
+.headWallet .user .d-flex .val_pro:before,
+.headWallet .myWallet .d-flex .val_pro:before {
+  content: "Projetos Entregues";
+}
+.headWallet .myfatu .d-flex .val_pro_atv:before,
+.headWallet .myProj_atv .d-flex .val_pro_atv:before,
+.headWallet .myProj .d-flex .val_pro_atv:before,
+.headWallet .user .d-flex .val_pro_atv:before,
+.headWallet .myWallet .d-flex .val_pro_atv:before {
+  content: "Projetos Ativos";
+}
+
+.saldo_saque {
+  background-color: rgba(50, 58, 69, 0.1);
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid #d6d7d9;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.saldo_saque i {
+  color: #323a45;
+  font-size: 1.6rem;
+}
+.saldo_saque .val {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.saldo_saque .val:before {
+  content: "Disponível para Saque";
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-bottom: 0;
 }
 
 .btVoltar,
@@ -1243,6 +1347,26 @@ s .btJob.active:before {
 }
 .feedContent .panel .block .action .btn {
   border-color: #ffffff;
+}
+
+.nav-profile {
+  margin-bottom: 0.8rem;
+  border-right: 1px solid #d6d7d9;
+}
+.nav-profile:before {
+  display: block;
+  content: "Menu Profile:";
+  font-size: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+.nav-profile ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-profile ul li {
+  display: block;
+  margin-bottom: 0.4rem;
 }
 
 .chat {
@@ -1494,5 +1618,61 @@ s .btJob.active:before {
 
   .btVoltar:after {
     content: "Voltar";
+  }
+
+  .nav-profile {
+    border-right: 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #d6d7d9;
+  }
+
+  .headWallet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: dense;
+  }
+  .headWallet .grd_full {
+    grid-column: span 2;
+  }
+  .headWallet .myfatu i,
+.headWallet .myProj_atv i,
+.headWallet .myProj i,
+.headWallet .user i,
+.headWallet .myWallet i {
+    font-size: 1.2rem;
+  }
+  .headWallet .myfatu .d-flex,
+.headWallet .myProj_atv .d-flex,
+.headWallet .myProj .d-flex,
+.headWallet .user .d-flex,
+.headWallet .myWallet .d-flex {
+    gap: 8px;
+  }
+  .headWallet .myfatu .d-flex .val_fatu,
+.headWallet .myfatu .d-flex .val_pro,
+.headWallet .myfatu .d-flex .val_pro_atv,
+.headWallet .myfatu .d-flex .name,
+.headWallet .myfatu .d-flex .val,
+.headWallet .myProj_atv .d-flex .val_fatu,
+.headWallet .myProj_atv .d-flex .val_pro,
+.headWallet .myProj_atv .d-flex .val_pro_atv,
+.headWallet .myProj_atv .d-flex .name,
+.headWallet .myProj_atv .d-flex .val,
+.headWallet .myProj .d-flex .val_fatu,
+.headWallet .myProj .d-flex .val_pro,
+.headWallet .myProj .d-flex .val_pro_atv,
+.headWallet .myProj .d-flex .name,
+.headWallet .myProj .d-flex .val,
+.headWallet .user .d-flex .val_fatu,
+.headWallet .user .d-flex .val_pro,
+.headWallet .user .d-flex .val_pro_atv,
+.headWallet .user .d-flex .name,
+.headWallet .user .d-flex .val,
+.headWallet .myWallet .d-flex .val_fatu,
+.headWallet .myWallet .d-flex .val_pro,
+.headWallet .myWallet .d-flex .val_pro_atv,
+.headWallet .myWallet .d-flex .name,
+.headWallet .myWallet .d-flex .val {
+    font-size: 0.9rem;
   }
 }

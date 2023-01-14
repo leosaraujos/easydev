@@ -183,9 +183,9 @@
                                         <div class="nav-profile">
                                             <ul>
                                                 <li><a href="historico.html" class="btn bt-style">Histórico</a></li>
-                                                <li><a href="javascript:void(0)" class="btn bt-style active">Profile</a></li>
-                                                <li><a href="bank.html" class="btn bt-style">Dados Bancarios</a></li>                                                
-                                                <li><a href="sacar.html" class="btn bt-style">Sacar</a></li>
+                                                <li><a href="profile.html" class="btn bt-style">Profile</a></li>
+                                                <li><a href="bank.html" class="btn bt-style">Dados Bancarios</a></li>
+                                                <li><a href="javascript:void(0)" class="btn bt-style active">Sacar</a></li>
                                                 <li><a href="javascript:void(0)" class="btn bt-style">Lorem Ipsum</a></li>                                                
                                             </ul>
                                         </div>
@@ -193,7 +193,7 @@
                                     <div class="col-sm-12 col-md-9">
                                         <div class="sections">
                                             <div class="title-section">
-                                                <h3 class="mb-3">Perfil</h3>
+                                                <h3 class="mb-3">Sacar</h3>
                                             </div>    
                                             <div class="headWallet mb-3">
                                                 <div class="user grd_full">
@@ -226,114 +226,98 @@
                                                         <div class="val">R$ 1.150,00</div>
                                                     </div>
                                                 </div>
-                                            </div>    
-                                            
-                                            <div class="row">
+                                            </div> 
+                                              <div class="row">
+                                                <div class="col-sm-12 col-md-4">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="local_banco" aria-label="Selecione um Banco" disabled>
+                                                            <option>Selecione</option>
+                                                            <option value="br" selected>Brasil</option>
+                                                            <option value="fr">França</option>
+                                                            <option value="mx">Mexico</option>
+                                                          </select>
+                                                          <label for="local_banco">País do Banco</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="banco" aria-label="Selecione um Banco" disabled>
+                                                            <option >Selecione</option>
+                                                            <option value="bb" selected>001 - Banco do Brasil</option>
+                                                            <option value="itau">002 - Itaú</option>
+                                                            <option value="caixa">003 - Caixa</option>
+                                                          </select>
+                                                          <label for="banco">Banco</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4">
+                                                    <div class="form-floating">
+                                                        <select class="form-select" id="tipo_conta" aria-label="Selecione o tipo da conta" disabled>
+                                                            <option>Selecione</option>
+                                                            <option value="cc" selected>Cc - Conta Corrente</option>
+                                                            <option value="pp">Pp - Poupança</option>
+                                                          </select>
+                                                          <label for="tipo_conta ">Tipo da Conta</label>
+                                                    </div>
+                                                </div>
+                                              </div> 
+                                              <div class="row">
                                                 <div class="col-sm-12 col-md-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="userName" placeholder="Nome">
-                                                        <label for="userName">Nome</label>            
+                                                        <input type="text" class="form-control" id="ag_banco" placeholder="Agência" disabled value="57.611-5">
+                                                        <label for="ag_banco">Agência</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="userLastname" placeholder="Sobrenome">
-                                                        <label for="userLastname">Sobrenome</label>            
+                                                        <input type="text" class="form-control" id="conta_banco" placeholder="Conta" disabled value="2365-5">
+                                                        <label for="conta_banco">Conta</label>            
                                                     </div>
                                                 </div>
                                               </div> 
                                               <div class="row">
                                                 <div class="col-sm-12 col-md-12">       
                                                     <div class="form-floating">
-                                                        <input type="email" class="form-control" id="userEmail" placeholder="E-mail">
-                                                        <label for="userEmail">Email</label>            
+                                                        <input type="text" class="form-control" id="chave_pix" placeholder="Chave PIX" disabled value="123456">
+                                                        <label for="chave_pix">Chave PIX</label>            
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                <div class="col-sm-12 col-md-12">       
+                                                    <div class="form-floating">
+                                                        <input type="text" class="form-control" id="userbanco" placeholder="Nome do Títular" disabled value="Leo Araújo">
+                                                        <label for="userbanco">Nome do Titular da Conta</label>            
                                                     </div>
                                                 </div>
                                               </div>
                                               <div class="row">
                                                 <div class="col-sm-12 col-md-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="cpf_doc" placeholder="000.000.000-00">
+                                                        <input type="text" class="form-control" id="cpf_doc" placeholder="000.000.000-00"disabled value="000.000.000-00">
                                                         <label for="cpf_doc">CPF</label>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6">
                                                     <div class="form-floating">
-                                                        <input type="text" class="form-control" id="rg_doc" placeholder="0.000-000">
+                                                        <input type="text" class="form-control" id="rg_doc" placeholder="0.000-000" disabled value="0.000-000">
                                                         <label for="rg_doc">RG</label>            
                                                     </div>
                                                 </div>
-                                              </div>        
+                                              </div>                                                     
                                               <hr>
                                               <div class="row mt-4">
-                                                <div class="col-sm-12 col-md-3 mt-2">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="cep" placeholder="CEP">
-                                                        <label for="cep">CEP</label>          
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-9 mt-2">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="endereco" placeholder="Endereço">
-                                                        <label for="endereco">Endereço</label>          
-                                                    </div>
-                                                </div>
-                                              </div>
-                                              <div class="row">
-                                                <div class="col-sm-12 col-md-2">
-                                                    <div class="form-floating">
-                                                        <select class="form-select" id="uf" aria-label="Estado">
-                                                          <option selected>UF</option>
-                                                          <option value="pe">PE</option>
-                                                          <option value="sp">SP</option>
-                                                          <option value="rj">RJ</option>
-                                                        </select>
-                                                        <label for="uf">Estado</label>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-5">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="cidade" placeholder="Cidade">
-                                                        <label for="cidade">Cidade</label>          
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-5">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="bairro" placeholder="Bairro">
-                                                        <label for="bairro">Bairro</label>          
-                                                    </div>
-                                                </div>                                                
-                                              </div>
-                                              <div class="row">
-                                                <div class="col-sm-12 col-md-12">
-                                                    <div class="form-floating">
-                                                        <input type="text" class="form-control" id="complemento" placeholder="Complemento">
-                                                        <label for="complemento">Complemento</label>            
-                                                    </div>
-                                                </div>
-                                              </div>
-                                              <hr>
-                                              <div class="row  mt-4">
-                                                <div class="col-sm-12 col-md-6 mt-2">
-                                                    <div class="form-floating">
-                                                        <input type="password" class="form-control" id="userPass" placeholder="******" disabled>
-                                                        <label for="userPass">Senha</label>          
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-12 col-md-6 mt-2">
-                                                    <div class="form-floating">
-                                                        <input type="password" class="form-control" id="confirm-userPass" placeholder="******" disabled>
-                                                        <label for="confirm-userPass">Senha</label>          
-                                                    </div>
-                                                </div>
-                                              </div>                                                    
-                                              <hr>
-                                              <div class="row  mt-4">
-                                                <div class="col-sm-12 col-md-8 mt-2"></div>
                                                 <div class="col-sm-12 col-md-4 mt-2">
-                                                    <a href="javascript:void(0)" class="w-100 btn btn-md bt-style" >Editar</a>   
+                                                    <div class="saldo_saque">
+                                                        <i class="fa-solid fa-money-bill-transfer"></i>
+                                                        <div class="val">R$ 1.150,00</div>                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 mt-2"></div>
+                                                <div class="col-sm-12 col-md-4 mt-2 mb-3">
+                                                    <a href="javascript:void(0)" class="w-100 btn btn-md bt-style pt-3 pb-3">Sacar</a>   
                                                 </div>                                                
-                                              </div>                           
+                                              </div>
                                         </div>
                                     </div>
                                 </div>
